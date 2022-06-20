@@ -1,0 +1,12 @@
+include/Zend
+include/database
+include/simplehtmldom
+kcfinder
+layouts/v7/lib
+libraries
+migrate/resources
+pkg/vtiger/extensions/Webservices/third-party
+resources/fonts
+test/migration
+vendor
+vtil/thirdparty
