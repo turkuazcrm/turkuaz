@@ -13,12 +13,16 @@ Vagrant.configure('2') do |config|
     guest.storage_pool_name = 'berkhan'
   end
 
+  # TODO: Configure MariaDB for `sql_mode`  /etc/mysql/mariadb.conf.d/50-server.cnf
+  # TODO: Generate a self generated SSL for Apache HTTP and forward
+  #   only 443 port
+  #
   config.vm.provision :shell, inline: <<-SHELL
     apt-get update
-    apt-get install --yes --no-install-recommends apache2 php \
+    apt-get install --yes --no-install-recommends git apache2 php \
        php-curl php-imap php-xml php-mysql mariadb-server \
-       composer yarnpkg
-    su vagrant -c 'yarnpkg global add prettier @prettier/plugin-php"
+       yarnpkg
+    su vagrant -c 'yarnpkg global add prettier @prettier/plugin-php'
     mariadb -u root -e "
       CREATE DATABASE vtiger_development;
       CREATE USER 'vtiger'@'localhost' IDENTIFIED BY 'vtiger';
