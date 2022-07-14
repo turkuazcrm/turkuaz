@@ -13,21 +13,25 @@ Vagrant.configure('2') do |config|
     guest.storage_pool_name = 'berkhan'
   end
 
-  # TODO: Configure MariaDB for `sql_mode`  /etc/mysql/mariadb.conf.d/50-server.cnf
   # TODO: Generate a self generated SSL for Apache HTTP and forward
   #   only 443 port
   #
   config.vm.provision :shell, inline: <<-SHELL
     apt-get update
     apt-get install --yes --no-install-recommends git apache2 php \
-       php-curl php-imap php-xml php-mysql mariadb-server \
-       yarnpkg
+       php-mbstring php-curl php-imap php-xml php-mysql mariadb-server \
+       yarnpkg composer
     su vagrant -c 'yarnpkg global add prettier @prettier/plugin-php'
-    mariadb -u root -e "
+    mariadb -e "
       CREATE DATABASE vtiger_development;
       CREATE USER 'vtiger'@'localhost' IDENTIFIED BY 'vtiger';
       GRANT ALL PRIVILEGES ON vtiger_development.* TO 'vtiger'@'localhost';
       FLUSH PRIVILEGES;
     "
+    cat <<-'EOF' > /etc/mysql/mariadb.conf.d/100-sql-mode.cnf
+[mysqld]
+sql_mode = ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+EOF
+    systemctl restart mariadb.service
   SHELL
 end
