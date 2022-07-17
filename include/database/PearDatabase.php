@@ -110,7 +110,6 @@ class PearDatabase{
 
     function isMySQL() { return (stripos($this->dbType ,'mysql') === 0);}
     function isOracle() { return $this->dbType=='oci8'; }
-    function isPostgres() { return $this->dbType=='pgsql'; }
 
     function println($msg)
     {
@@ -143,9 +142,9 @@ class PearDatabase{
 
 	function startTransaction() {
 		/* Restore php_mysql based behavior */
-		if (true) { 
-			if ($this->database) $this->database->Execute('SET AUTOCOMMIT=1'); 
-			return; 
+		if (true) {
+			if ($this->database) $this->database->Execute('SET AUTOCOMMIT=1');
+			return;
 		}
 
 	    if($this->isPostgres()) return;
@@ -155,7 +154,7 @@ class PearDatabase{
     }
 
 	function completeTransaction() {
-		/* Restore php_mysql based behaviour */	
+		/* Restore php_mysql based behaviour */
 		if (true) return;
 
 	    if($this->isPostgres()) return;
@@ -259,7 +258,7 @@ class PearDatabase{
 		global $default_charset;
 		static $DEFAULTCHARSET = null;
 		if ($DEFAULTCHARSET === null) $DEFAULTCHARSET = strtoupper($default_charset);
-		
+
 		// Performance Tuning: If database default charset is UTF-8, we don't need this
 		if($DEFAULTCHARSET == 'UTF-8' && ($force || !$this->isdb_default_utf8_charset)) {
 
@@ -672,8 +671,6 @@ class PearDatabase{
 			    return 'concat('.implode(',',$list).')';
                     case 'mysqli':
                             return 'concat('.implode(',',$list).')';
-		    case 'pgsql':
-			    return '('.implode('||',$list).')';
 		    default:
 			    throw new Exception("unsupported dbtype \"".$this->dbType."\"");
 	    }
@@ -821,7 +818,7 @@ class PearDatabase{
 		}
 
 		$this->database = ADONewConnection($this->dbType);
-	
+
 		// Setting client flag for Import csv to database(LOAD DATA LOCAL INFILE.....)
 		if ($this->database->clientFlags == 0 && isset($dbconfigoption['clientFlags'])) {
 			$this->database->clientFlags = $dbconfigoption['clientFlags'];
@@ -909,7 +906,7 @@ class PearDatabase{
 			mysql_close($this->database->_connectionID);
 	    }else if($this->dbType=="mysqli"){
                 mysqli_close($this->database->_connectionID);
-            } 
+            }
             else {
 			$this->database->disconnect();
 	    }
@@ -1046,23 +1043,12 @@ class PearDatabase{
 		if($this->isMySql()){
 			$result_data = ($this->dbType=='mysqli')?mysqli_real_escape_string($this->database->_connectionID,$str):mysql_real_escape_string($str);
                 }
-		elseif($this->isPostgres())
-			$result_data = pg_escape_string($str);
 		return $result_data;
 	}
 
 	// Function to get the last insert id based on the type of database
 	function getLastInsertID($seqname = '') {
-		if($this->isPostgres()) {
-			$result = pg_query("SELECT currval('".$seqname."_seq')");
-			if($result)
-			{
-				$row = pg_fetch_row($result);
-				$last_insert_id = $row[0];
-			}
-		} else {
-			$last_insert_id = $this->database->Insert_ID();
-		}
+		$last_insert_id = $this->database->Insert_ID();
 		return $last_insert_id;
 	}
 
@@ -1077,8 +1063,6 @@ class PearDatabase{
 
 	function check_db_utf8_support() {
 		global $db_type;
-		if($db_type == 'pgsql')
-			return true;
 		$dbvarRS = $this->database->Execute("show variables like '%_database' ");
 		$db_character_set = null;
 		$db_collation_type = null;
@@ -1097,8 +1081,6 @@ class PearDatabase{
 
 	function get_db_charset() {
 		global $db_type;
-		if($db_type == 'pgsql')
-			return 'UTF8';
 		$dbvarRS = $this->database->query("show variables like '%_database' ");
 		$db_character_set = null;
 		while(!$dbvarRS->EOF) {

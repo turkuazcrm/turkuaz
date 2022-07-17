@@ -71,7 +71,7 @@ if ($allow_exports=='none' || ( $allow_exports=='admin' && ! is_admin($current_u
 		alert("<?php echo $app_strings['NOT_PERMITTED_TO_EXPORT']?>");
 		window.location="index.php?module=<?php echo vtlib_purify($_REQUEST['module']) ?>&action=index";
 	</script>
-	
+
 	<?php exit; ?>
 <?php
 }
@@ -117,7 +117,7 @@ function export($type){
 
     $search_type = vtlib_purify($_REQUEST['search_type']);
     $export_data = vtlib_purify($_REQUEST['export_data']);
-	
+
 	if(isset($_SESSION['export_where']) && $_SESSION['export_where']!='' && $search_type == 'includesearch'){
 		$where =$_SESSION['export_where'];
 	}
@@ -136,7 +136,7 @@ function export($type){
 	$params = array();
 
 	list($idstring, $export_data) = split("#@@#",getExportRecordIds($type, $viewid, $_REQUEST));
-	
+
 	if(($search_type == 'withoutsearch' || $search_type == 'includesearch') && $export_data == 'selecteddata'){
 		$idstring = getSelectedRecords($_REQUEST, $type, $idstring, vtlib_purify($_REQUEST['excludedRecords']));
 		if($type == 'Accounts' && php7_count($idstring) > 0) {
@@ -183,7 +183,7 @@ function export($type){
 			// END
 		}
 	}
-	
+
 	if(isset($order_by) && $order_by != ''){
 		if($order_by == 'smownerid'){
 			$query .= ' ORDER BY user_name '.$sorder;
@@ -194,13 +194,10 @@ function export($type){
 		}else{
 			$tablename = getTableNameForField($type,$order_by);
 			$tablename = (($tablename != '')?($tablename."."):'');
-			if( $adb->dbType == "pgsql"){
-				$query .= ' GROUP BY '.$tablename.$order_by;
-			}
 			$query .= ' ORDER BY '.$tablename.$order_by.' '.$sorder;
 		}
 	}
-	
+
 	if($export_data == 'currentpage'){
 		$current_page = ListViewSession::getCurrentPage($type,$viewid);
 		$limit_start_rec = ($current_page - 1) * $list_max_entries_per_page;
@@ -211,9 +208,9 @@ function export($type){
     $result = $adb->pquery($query, $params, true, "Error exporting $type: "."<BR>$query");
     $fields_array = $adb->getFieldsArray($result);
     $fields_array = array_diff($fields_array,array("user_name"));
-	
+
 	$__processor = new ExportUtils($type, $fields_array);
-	
+
 	// Translated the field names based on the language used.
 	$translated_fields_array = array();
 	for($i=0; $i<php7_count($fields_array); $i++) {
@@ -222,7 +219,7 @@ function export($type){
 	$header = implode("\",\"",array_values($translated_fields_array));
 	$header = "\"" .$header;
 	$header .= "\"\r\n";
-	
+
 	/** Output header information */
 	echo $header;
 
@@ -239,14 +236,14 @@ function export($type){
 			}elseif($key != "user_name"){
 				// Let us provide the module to transform the value before we save it to CSV file
 				$value = $focus->transform_export_value($key, $value);
-				
+
 				array_push($new_arr, preg_replace("/\"/","\"\"",$value));
 			}
 		}
 		$line = implode("\",\"",$new_arr);
 		$line = "\"" .$line;
 		$line .= "\"\r\n";
-		
+
 		/** Output each row information */
 		echo $line;
 	}
@@ -275,7 +272,7 @@ exit;
 class ExportUtils{
 	var $fieldsArr = array();
 	var $picklistValues = array();
-	
+
 	function __construct($module, $fields_array)
 	{
 		self::__init($module, $fields_array);
@@ -286,11 +283,11 @@ class ExportUtils{
 		// In that case, call the new-style constructor to keep compatibility.
 		self::__construct($module, $fields_array);
 	}
-	
-	
+
+
 	function __init($module, $fields_array){
 		$infoArr = self::getInformationArray($module);
-		
+
 		//attach extra fields related information to the fields_array; this will be useful for processing the export data
 		foreach($infoArr as $fieldname=>$fieldinfo){
 			if(in_array($fieldinfo["fieldlabel"], $fields_array)){
@@ -298,7 +295,7 @@ class ExportUtils{
 			}
 		}
 	}
-	
+
 	/**
 	 * this function takes in an array of values for an user and sanitizes it for export
 	 * @param array $arr - the array of values
@@ -306,10 +303,10 @@ class ExportUtils{
 	function sanitizeValues($arr){
 		global $current_user, $adb;
 		$roleid = fetchUserRole($current_user->id);
-		
+
 		foreach($arr as $fieldlabel=>&$value){
 			$fieldInfo = $this->fieldsArr[$fieldlabel];
-			
+
 			$uitype = $fieldInfo['uitype'];
 			$fieldname = $fieldInfo['fieldname'];
 			if($uitype == 15 || $uitype == 16 || $uitype == 33){
@@ -347,7 +344,7 @@ class ExportUtils{
 		}
 		return $arr;
 	}
-	
+
 	/**
 	 * this function takes in a module name and returns the field information for it
 	 */
@@ -355,12 +352,12 @@ class ExportUtils{
 		require_once 'include/utils/utils.php';
 		global $adb;
 		$tabid = getTabid($module);
-		
+
 		$result = $adb->pquery("select * from vtiger_field where tabid=?", array($tabid));
 		$count = $adb->num_rows($result);
 		$arr = array();
 		$data = array();
-		
+
 		for($i=0;$i<$count;$i++){
 			$arr['uitype'] = $adb->query_result($result, $i, "uitype");
 			$arr['fieldname'] = $adb->query_result($result, $i, "fieldname");

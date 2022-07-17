@@ -10,7 +10,6 @@
  ********************************************************************************/
 
 require_once('include/database/PearDatabase.php');
-require_once('include/database/Postgres8.php');
 require_once('include/utils/utils.php');
 require_once('include/utils/GetUserGroups.php');
 include_once('config.php');
@@ -2071,9 +2070,6 @@ function getFieldVisibilityPermission($fld_module, $userid, $fieldname, $accessm
 				}
 				$params = array($tabid, $fieldname);
 			}
-			//Postgres 8 fixes
-		if( $adb->dbType == "pgsql")
-			$query = fixPostgresQuery( $query, $log, 0);
 
 
 			$result = $adb->pquery($query, $params);

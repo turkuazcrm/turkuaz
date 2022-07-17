@@ -118,12 +118,7 @@ function getPriceBookRelatedProducts($query,$focus,$returnset='')
 
 	$limit_start_rec = ($start-1) * $list_max_entries_per_page;
 
-	if( $adb->dbType == "pgsql")
-		$list_result = $adb->pquery($query.
-				" OFFSET $limit_start_rec LIMIT $list_max_entries_per_page", array());
-	else
-		$list_result = $adb->pquery($query.
-				" LIMIT $limit_start_rec, $list_max_entries_per_page", array());
+	$list_result = $adb->pquery($query." LIMIT $limit_start_rec, $list_max_entries_per_page", array());
 
 	$header=array();
 	$header[]=$mod_strings['LBL_LIST_PRODUCT_NAME'];
@@ -195,9 +190,9 @@ function CheckFieldPermission($fieldname,$module) {
 function CheckColumnPermission($tablename, $columnname, $module)
 {
 	global $adb;
-	
+
 	static $cache = array();
-	
+
 	$cachekey = $module . ":" . $tablename . ":" . $columnname;
 	if (!array_key_exists($cachekey, $cache)) {
 		$res = $adb->pquery("select fieldname from vtiger_field where tablename=? and columnname=? and vtiger_field.presence in (0,2)", array($tablename, $columnname));

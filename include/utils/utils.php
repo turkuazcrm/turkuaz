@@ -145,7 +145,7 @@ function get_user_array($add_blank=true, $status="Active", $assigned_user="",$pr
 				{
 					$log->debug("Sharing is Private. Only the current user should be listed");
 					$query = "select id as id,user_name as user_name,first_name,last_name,userlabel from vtiger_users where id=? and status='Active' union select vtiger_user2role.userid as id,vtiger_users.user_name as user_name ,
-							  vtiger_users.first_name as first_name ,vtiger_users.last_name as last_name, vtiger_users.userlabel AS userlabel 
+							  vtiger_users.first_name as first_name ,vtiger_users.last_name as last_name, vtiger_users.userlabel AS userlabel
 							  from vtiger_user2role inner join vtiger_users on vtiger_users.id=vtiger_user2role.userid inner join vtiger_role on vtiger_role.roleid=vtiger_user2role.roleid where vtiger_role.parentrole like ? and status='Active' union
 							  select shareduserid as id,vtiger_users.user_name as user_name ,
 							  vtiger_users.first_name as first_name ,vtiger_users.last_name as last_name,vtiger_users.userlabel AS userlabel from vtiger_tmp_write_user_sharing_per inner join vtiger_users on vtiger_users.id=vtiger_tmp_write_user_sharing_per.shareduserid where status='Active' and vtiger_tmp_write_user_sharing_per.userid=? and vtiger_tmp_write_user_sharing_per.tabid=? and (user_name != 'admin' OR is_owner=1)";
@@ -335,14 +335,14 @@ function set_default_config(&$defaults)
  */
 function decide_to_html() {
 	global $doconvert, $inUTF8, $default_charset;
- 	$action = isset($_REQUEST['action']) ? $_REQUEST['action'] : ''; 
- 		     
-    $inUTF8 = (strtoupper($default_charset) == 'UTF-8'); 
+ 	$action = isset($_REQUEST['action']) ? $_REQUEST['action'] : '';
 
-    $doconvert = true; 
+    $inUTF8 = (strtoupper($default_charset) == 'UTF-8');
+
+    $doconvert = true;
 	if ($action == 'ExportData') {
-        $doconvert = false; 
-    } 
+        $doconvert = false;
+    }
 }
 decide_to_html();
 
@@ -465,7 +465,7 @@ function getColumnFields($module)
             getColumnFields('Events');
             $cachedEventsFields = VTCacheUtils::lookupFieldInfo_Module('Events');
         }
-        
+
 		if (!$cachedModuleFields) {
             $cachedModuleFields = $cachedEventsFields;
 		} else {
@@ -1292,8 +1292,6 @@ function get_config_status() {
 function getMigrationCharsetFlag() {
 	global $adb;
 
-	if(!$adb->isPostgres())
-		$db_status=$adb->check_db_utf8_support();
 	$config_status=get_config_status();
 
 	if ($db_status == $config_status) {
@@ -1344,7 +1342,7 @@ function transferCurrency($old_cur, $new_cur) {
 
 	// Transfer PriceBook Currency to new currency
 	transferPriceBookCurrency($old_cur, $new_cur);
-    
+
     // Transfer Services Currency to new currency
     transferServicesCurrency($old_cur, $new_cur);
 }
@@ -1361,7 +1359,7 @@ function transferUserCurrency($old_cur, $new_cur) {
 	$current_user->retrieve_entity_info($currentUserId, 'Users');
 	unset(Users_Record_Model::$currentUserModels[$currentUserId]);
 
-	require_once('modules/Users/CreateUserPrivilegeFile.php'); 
+	require_once('modules/Users/CreateUserPrivilegeFile.php');
 	createUserPrivilegesfile($currentUserId);
 
 	$log->debug("Exiting function transferUserCurrency...");
@@ -1643,7 +1641,7 @@ function relateEntities($focus, $sourceModule, $sourceRecordId, $destinationModu
 		$focus->save_related_module($sourceModule, $sourceRecordId, $destinationModule, $destinationRecordId);
 		$focus->trackLinkedInfo($sourceModule, $sourceRecordId, $destinationModule, $destinationRecordId);
 	}
-    
+
     $em->triggerEvent("vtiger.entity.afterrelate", $data);
 }
 
@@ -2337,7 +2335,7 @@ function lower_array(&$string){
 if (!function_exists('get_magic_quotes_runtime')) { function get_magic_quotes_runtime() { return false; } }
 if (!function_exists('set_magic_quotes_runtime')) { function set_magic_quotes_runtime($flag) {} }
 
-/** 
+/**
  * Function to escape backslash (\ to \\) in a string
  * @param string $value String to be escaped
  * @return string escaped string
