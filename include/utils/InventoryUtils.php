@@ -59,7 +59,7 @@ function sendPrdStckMail($product_id,$upd_qty,$prod_name,$qtyinstk,$qty,$module)
 	$log->debug("Inside sendPrdStckMail function, module=".$module);
 	$log->debug("Prd reorder level ".$reorderlevel);
 	if($upd_qty < $reorderlevel)
-	{	
+	{
 		//send mail to the handler
 		$handlerType = '';
 		$handler = getRecordOwnerId($product_id);
@@ -364,9 +364,7 @@ function getTaxDetailsForProduct($productid, $available='all')
 		}
 		$params = array($productid);
 
-		//Postgres 8 fixes
- 		if( $adb->dbType == "pgsql")
- 		    $query = fixPostgresQuery( $query, $log, 0);
+
 
 		$res = $adb->pquery($query, $params);
 		for($i=0;$i<$adb->num_rows($res);$i++)
@@ -564,7 +562,7 @@ function updateInventoryProductRel($entity) {
 			if(CRMEntity::isBulkSaveMode() || !$recievedKey) {//From Import or First time triggering status as "Received Shipment"
 				$isUpdateNeeded = true;
 			}
-			
+
 			if ($recievedKey && !$isUpdateNeeded) {
 				for($i=1; $i<=$recievedKey; $i++) {
 					if ($statusStack[$i] === 'Cancelled') {
@@ -804,8 +802,8 @@ function saveInventoryProductDetails(&$focus, $module, $update_prod_stock='false
 	$updatequery .= " subtotal=?,";
 	array_push($updateparams, $subtotal);
 
-    $pretaxTotal = vtlib_purify($_REQUEST['pre_tax_total']); 
- 	$updatequery .= " pre_tax_total=?,"; 
+    $pretaxTotal = vtlib_purify($_REQUEST['pre_tax_total']);
+ 	$updatequery .= " pre_tax_total=?,";
  	array_push($updateparams, $pretaxTotal);
 
 	$updatequery .= " taxtype=?,";
@@ -829,7 +827,7 @@ function saveInventoryProductDetails(&$focus, $module, $update_prod_stock='false
 		array_push($updateparams, null);
 		array_push($updateparams, null);
 	}
-	
+
 	$shipping_handling_charge = vtlib_purify($_REQUEST['shipping_handling_charge']);
 	$updatequery .= " s_h_amount=?,";
 	array_push($updateparams, $shipping_handling_charge);
@@ -847,7 +845,7 @@ function saveInventoryProductDetails(&$focus, $module, $update_prod_stock='false
 	$updatequery .= " total=?,";
 	array_push($updateparams, $total);
 
-	$updatequery .= ' compound_taxes_info = ?,'; 
+	$updatequery .= ' compound_taxes_info = ?,';
 	array_push($updateparams, Zend_Json::encode($compoundTaxesInfo));
 
 	if (isset($_REQUEST['region_id'])) {
@@ -886,7 +884,7 @@ function getInventoryTaxType($module, $id)
 	global $log, $adb;
 
 	$log->debug("Entering into function getInventoryTaxType($module, $id).");
-	
+
 	$focus = CRMEntity::getInstance($module);
 
 	$inventoryTable = $focus->table_name;
@@ -1047,9 +1045,7 @@ function getPriceDetailsForProduct($productid, $unit_price, $available='availabl
 			$params = array($productid);
 		}
 
-		//Postgres 8 fixes
- 		if( $adb->dbType == "pgsql")
- 		    $query = fixPostgresQuery( $query, $log, 0);
+
 
 		$res = $adb->pquery($query, $params);
 		for($i=0;$i<$adb->num_rows($res);$i++)
@@ -1262,7 +1258,7 @@ function deductProductsFromStock($recordId) {
 		if($adb->num_rows($sub_prod_query)>0) {
 			for($j=0;$j<$adb->num_rows($sub_prod_query);$j++) {
 				$sub_prod_id = $adb->query_result($sub_prod_query,$j,"productid");
-				$subProductQty = $adb->query_result($sub_prod_query, $j, 'quantity'); 
+				$subProductQty = $adb->query_result($sub_prod_query, $j, 'quantity');
 				$sqtyinstk= getProductQtyInStock($sub_prod_id);
 				$supd_qty = $sqtyinstk - ($qty * $subProductQty);
 				updateProductQty($sub_prod_id, $supd_qty);
@@ -1288,7 +1284,7 @@ function addProductsToStock($recordId) {
 		if($adb->num_rows($sub_prod_query)>0) {
 			for($j=0;$j<$adb->num_rows($sub_prod_query);$j++) {
 				$sub_prod_id = $adb->query_result($sub_prod_query,$j,"productid");
-				$subProductQty = $adb->query_result($sub_prod_query, $j, 'quantity'); 
+				$subProductQty = $adb->query_result($sub_prod_query, $j, 'quantity');
 				$sqtyinstk= getProductQtyInStock($sub_prod_id);
 				$supd_qty = $sqtyinstk + ($qty * $subProductQty);
 				updateProductQty($sub_prod_id, $supd_qty);
@@ -1564,9 +1560,9 @@ function undoLastImport($obj, $user) {
 	$owner = new Users();
 	$owner->id = $ownerId;
 	$owner->retrieve_entity_info($ownerId, 'Users');
-	
+
 	$dbTableName = Import_Utils_Helper::getDbTableName($owner);
-	
+
 	if(!is_admin($user) && $user->id != $owner->id) {
 		$viewer = new Vtiger_Viewer();
 		$viewer->view('OperationNotPermitted.tpl', 'Vtiger');
@@ -1621,7 +1617,7 @@ function getCurrencyId($fieldValue) {
  */
 function getLineItemFields(){
 	global $adb;
-	
+
 	$sql = 'SELECT DISTINCT columnname FROM vtiger_field WHERE tablename=?';
 	$result = $adb->pquery($sql, array('vtiger_inventoryproductrel'));
 	$lineItemdFields = array();
