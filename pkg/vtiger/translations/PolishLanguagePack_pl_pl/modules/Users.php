@@ -126,7 +126,7 @@ $languageStrings = array(
     'Africa/Cairo'  =>  '(UTC+02:00) Cairo',
     'Europe/Helsinki'  =>  '(UTC+02:00) Helsinki, Riga, Sofia, Tallinn, Vilnius',
     'Europe/Athens'  =>  '(UTC+02:00) Athens, Bucharest',
-    'Europe/Istanbul'  =>  '(UTC+03:00) Istanbul',
+    'Europe/Istanbul'  =>  '(UTC+02:00) Istanbul',
     'Asia/Jerusalem'  =>  '(UTC+02:00) Jerusalem',
     'Asia/Amman'  =>  '(UTC+02:00) Amman',
     'Asia/Beirut'  =>  '(UTC+02:00) Beirut',
@@ -175,7 +175,7 @@ $languageStrings = array(
     'Pacific/Auckland'  =>  '(UTC+12:00) Auckland',
     'Asia/Magadan'  =>  '(UTC+12:00) Magadan',
     'Pacific/Tongatapu'  =>  '(UTC+13:00) Nukualofa',
-
+    
     'LBL_ACTIVE_USERS' => 'Aktywnych użytkowników',
     'LBL_INACTIVE_USERS' => 'Nieaktywnych użytkowników',
     'LBL_DELETE_USER_PERMANENTLY' => 'Usuń użytkownika na stałe',
@@ -184,7 +184,7 @@ $languageStrings = array(
 	'Summary' => 'Podsumowanie',
 	'Detail' => 'Szczegóły',
 	'LBL_USER_LIST_DETAILS' => 'Szczegóły',
-
+	
 	'LBL_OLD_PASSWORD' => 'Stare hasło',
 	'LBL_CHANGE_PASSWORD' => 'Zmień hasło',
 	'LBL_NEW_PASSWORD' => 'Nowe hasło',
@@ -192,7 +192,7 @@ $languageStrings = array(
 	'LBL_CHANGE_ACCESS_KEY' => 'Zmień Access Key',
 	'LBL_ACCESS_KEY_UPDATED_SUCCESSFULLY' => 'Klawisz pomyślnie zaktualizowane',
 	'LBL_FAILED_TO_UPDATE_ACCESS_KEY' => 'Nie udało się zaktualizować klucz dostępu',
-
+	
 	//Login strings
 	'LBL_TO_CRM' => 'Zaloguj do Vtiger CRM',
 	'LBL_INVALID_USER_OR_PASSWORD' => 'Niepoprawna nazwa użytkownika lub hasło.',
@@ -201,7 +201,7 @@ $languageStrings = array(
 	'ForgotPassword' => 'Zapomniane hasło',
 	'LBL_CONNECT_WITH_US' => 'Połącz z nami',
 	'LBL_GET_MORE' => 'Wykorzystaj lepiej Vtiger',
-
+	
 	'LBL_TRANSFER_RECORDS_TO_USER' => 'Przenieś rekordy na użytkownika',
 	'LBL_USER_TO_BE_DELETED' => 'Użytkownik do usunięcia',
 	'Starting Day of the week' => 'Tydzień rozpoczyna od dnia',
@@ -236,7 +236,7 @@ $languageStrings = array(
 	'ListView' => 'Widok listy',
 	'MyCalendar' => 'Mój Kalendarz',
 	'SharedCalendar' => 'Wspólny kalendarz',
-
+    
     'LBL_CHANGE_OWNER' => 'Zmiana właściciela',
     'LBL_TRANSFER_OWNERSHIP' => 'Przeniesienia prawa własności',
     'LBL_TRANSFER_OWNERSHIP_TO_USER' => 'Przeniesienia własności na użytkownika',
@@ -251,7 +251,7 @@ $languageStrings = array(
     'Left Panel Hide' => 'Lewy panel Ukryj',
     'Row Height' => 'Wysokość wiersza',
 	'LBL_RESTORE_USER_FAILED' => 'Nie udało się przywrócić użytkownikowi. Istnieje już użytkownik o tej nazwie CRM użytkownika.',
-
+    
     'LBL_DUPLICATE_USER_EXISTS' => 'Użytkownik już istnieje',
 
 
@@ -271,7 +271,7 @@ $languageStrings = array(
 
 );
 $jsLanguageStrings = array(
-
+		
 	//Curency seperator validation messages
 	'JS_ENTER_OLD_PASSWORD'=>'Wpisz swoje stare hasło.',
 	'JS_ENTER_NEW_PASSWORD'=>'Wpisz nowe hasło.',

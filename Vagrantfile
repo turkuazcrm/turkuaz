@@ -2,11 +2,16 @@ Vagrant.configure('2') do |config|
   config.vm.box = 'debian/bullseye64'
 
   config.vm.synced_folder '.', '/vagrant', disabled: true
-  config.vm.synced_folder '.', '/var/www/html'
+  config.vm.synced_folder '.', '/var/www/html', type: 'nfs',
+    nfs_version: 4, mount_options: ['noatime', 'nodiratime', 'relatime']
 
   config.vm.network :forwarded_port, guest: 80, host: 8000,
     host_ip: '127.0.0.1'
 
+  config.vm.provider :libvirt do |guest|
+    guest.memory = 1024
+    guest.storage_pool_name = 'berkhan'
+  end
 
   # TODO: Generate a self generated SSL for Apache HTTP and forward
   #   only 443 port
