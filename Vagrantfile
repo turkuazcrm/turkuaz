@@ -1,16 +1,40 @@
 Vagrant.configure('2') do |config|
   config.vm.box = 'debian/bullseye64'
 
-  config.vm.synced_folder '.', '/vagrant', disabled: true
-  config.vm.synced_folder '.', '/var/www/html', type: 'nfs',
-    nfs_version: 4, mount_options: ['noatime', 'nodiratime', 'relatime']
+  # Linux and Windows host machines need to use different kind of
+  # technology to provide best out of their power.  Linux machines
+  # should use NFS and Windows should use SMB.  VirtualBox provides
+  # simple synced_folder type, but also comes with speed penalty and
+  # known bugs.
+  #
+  synced_folder_options =
+    if Vagrant::Util::Platform.linux?
+      [type: 'nfs',
+        nfs_version: 4, mount_options: %w[noatime nodiratime relatime]]
+    else
+      [type: 'smb']
+    end
 
-  config.vm.network :forwarded_port, guest: 80, host: 8000,
-    host_ip: '127.0.0.1'
+  # Default Vagrant installation comes with /vagrant synced_folder
+  # enabled.  Since we don't need to provide identical path, and
+  # simplify web server configuration, we aimed to disable the default
+  # synced_folder path.
+  #
+  config.vm.synced_folder '.', '/vagrant', disabled: true
+  config.vm.synced_folder '.', '/var/www/html', *synced_folder_options
+
+  config.vm.network :forwarded_port, guest: 80, host: 8000, host_ip: '127.0.0.1'
 
   config.vm.provider :libvirt do |guest|
     guest.memory = 1024
+    # TODO: Remove personal storage pool name instead find different
+    #   method
+    #
     guest.storage_pool_name = 'berkhan'
+  end
+
+  config.vm.provider :virtualbox do |guest|
+    guest.memory = 1024
   end
 
   # TODO: Generate a self generated SSL for Apache HTTP and forward
