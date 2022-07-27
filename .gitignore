@@ -1,2 +1,16 @@
 /.idea
 /.vagrant
+
+/cache/images
+!/cache/images/.keep
+/cache/import
+!/cache/import/.keep
+/cache/upload
+!/cache/upload/.keep
+
+/test/templates_c
+!/test/templates_c/.keep
+/test/vtlib/HTML
+!/test/vtlib/HTML/.keep
+/test/wordtemplatedownload
+!/test/wordtemplatedownload/.keep
