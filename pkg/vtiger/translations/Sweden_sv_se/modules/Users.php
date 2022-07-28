@@ -130,7 +130,7 @@ $languageStrings = array(
     'Africa/Cairo'  =>  '(UTC+02:00) Cairo',
     'Europe/Helsinki'  =>  '(UTC+02:00) Helsinki, Riga, Sofia, Tallinn, Vilnius',
     'Europe/Athens'  =>  '(UTC+02:00) Athens, Bucharest',
-    'Europe/Istanbul'  =>  '(UTC+02:00) Istanbul',
+    'Europe/Istanbul'  =>  '(UTC+03:00) Istanbul',
     'Asia/Jerusalem'  =>  '(UTC+02:00) Jerusalem',
     'Asia/Amman'  =>  '(UTC+02:00) Amman',
     'Asia/Beirut'  =>  '(UTC+02:00) Beirut',
@@ -213,7 +213,7 @@ $languageStrings = array(
 	'ListView' => 'Lista',
 	'MyCalendar' => 'Min kalender',
 	'SharedCalendar' => 'Delad kalender',
-    
+
     'LBL_CHANGE_OWNER' => 'Ändra Owner',
     'LBL_TRANSFER_OWNERSHIP' => 'Överföra äganderätten',
     'LBL_TRANSFER_OWNERSHIP_TO_USER' => 'Överföra äganderätten till Användar',
@@ -228,7 +228,7 @@ $languageStrings = array(
     'Left Panel Hide' => 'Vänster Panel Göm',
     'Row Height' => 'Radhöjd',
 	'LBL_RESTORE_USER_FAILED' => 'Det gick inte att återställa användaren. Det finns redan en CRM-användare med detta användarnamn.',
-    
+
     'LBL_DUPLICATE_USER_EXISTS' => 'Användaren finns redan',
 
 
