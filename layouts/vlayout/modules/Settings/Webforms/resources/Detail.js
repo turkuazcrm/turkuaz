@@ -90,8 +90,7 @@ Settings_Vtiger_Detail_Js('Settings_Webforms_Detail_Js', {
                                 '}'+
 							'}';
                     if(container.find('[name=isCaptchaEnabled]').val() == true) {
-                         captchaPublicKey = container.find('[name=VTIGER_RECAPTCHA_PUBLIC_KEY]').val();
-                        showFormContents = Settings_Webforms_Detail_Js.getCaptchaCode(showFormContents,captchaPublicKey);
+                        showFormContents = Settings_Webforms_Detail_Js.getCaptchaCode(showFormContents);
                     } else {
                         showFormContents = showFormContents +
 						'}; '+
@@ -117,16 +116,15 @@ Settings_Vtiger_Detail_Js('Settings_Webforms_Detail_Js', {
      * @param <string> showFormContents
      * @return <string> showFormContents
      */
-    getCaptchaCode : function(showFormContents,captchaPublicKey) {
-        
+    getCaptchaCode : function(showFormContents) {
         var captchaContents = '<script type="text/javascript">'+
-        'var RecaptchaOptions = { theme : "clean" };'+
+        'var RecaptchaOptions = { theme : "clean" };' +
         '</script>'+
         '<script type="text/javascript"'+
-        'src="http://www.google.com/recaptcha/api/challenge?k='+captchaPublicKey+'">'+
+        'src="http://www.google.com/recaptcha/api/challenge?k=6Lchg-wSAAAAAIkV51_LSksz6fFdD2vgy59jwa38">'+
         '</script>'+
         '<noscript>'+
-            '<iframe src="http://www.google.com/recaptcha/api/noscript?k='+captchaPublicKey+'">'+
+            '<iframe src="http://www.google.com/recaptcha/api/noscript?k=6Lchg-wSAAAAAIkV51_LSksz6fFdD2vgy59jwa38"'+
                 'height="300" width="500" frameborder="0"></iframe><br>'+
             '<textarea name="recaptcha_challenge_field" rows="3" cols="40">'+
             '</textarea>'+
