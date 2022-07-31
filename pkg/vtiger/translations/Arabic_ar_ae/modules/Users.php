@@ -130,7 +130,7 @@ $languageStrings = array(
     'Africa/Cairo'  =>  '(UTC+02:00) Cairo',
     'Europe/Helsinki'  =>  '(UTC+02:00) Helsinki, Riga, Sofia, Tallinn, Vilnius',
     'Europe/Athens'  =>  '(UTC+02:00) Athens, Bucharest',
-    'Europe/Istanbul'  =>  '(UTC+02:00) Istanbul',
+    'Europe/Istanbul'  =>  '(UTC+03:00) Istanbul',
     'Asia/Jerusalem'  =>  '(UTC+02:00) Jerusalem',
     'Asia/Amman'  =>  '(UTC+02:00) Amman',
     'Asia/Beirut'  =>  '(UTC+02:00) Beirut',
@@ -193,7 +193,7 @@ $languageStrings = array(
 	'ListView' => 'عرض قائمة',
 	'MyCalendar' => 'بلدي التقويم',
 	'SharedCalendar' => 'التقويم المشترك',
-    
+
     'LBL_CHANGE_OWNER' => 'تغيير المالك',
     'LBL_TRANSFER_OWNERSHIP' => 'نقل ملكية',
     'LBL_TRANSFER_OWNERSHIP_TO_USER' => 'نقل الملكية إلى العضو',
@@ -208,7 +208,7 @@ $languageStrings = array(
     'Left Panel Hide' => 'لوحة اليسار إخفاء',
     'Row Height' => 'ارتفاع الصف',
 	'LBL_RESTORE_USER_FAILED' => 'فشل في استعادة المستخدم. وهناك بالفعل مستخدم CRM مع اسم المستخدم هذا.',
-    
+
     'LBL_DUPLICATE_USER_EXISTS' => 'المستخدم موجود بالفعل',
 
 
@@ -264,7 +264,7 @@ $languageStrings = array(
 
 );
 $jsLanguageStrings = array(
-		
+
 	//Curency seperator validation messages
 	'JS_ENTER_OLD_PASSWORD'=>'Please enter your old password.',
 	'JS_ENTER_NEW_PASSWORD'=>'Please enter your new password.',
