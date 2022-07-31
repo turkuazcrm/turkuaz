@@ -139,7 +139,7 @@ $languageStrings = array(
 	'Africa/Cairo'                 => '(UTC+02:00) Cairo',
 	'Europe/Helsinki'              => '(UTC+02:00) Helsinki, Riga, Sofia, Tallinn, Vilnius',
 	'Europe/Athens'                => '(UTC+02:00) Athens, Bucharest',
-	'Europe/Istanbul'              => '(UTC+02:00) Istanbul',
+	'Europe/Istanbul'              => '(UTC+03:00) Istanbul',
 	'Asia/Jerusalem'               => '(UTC+02:00) Jerusalem',
 	'Asia/Amman'                   => '(UTC+02:00) Amman',
 	'Asia/Beirut'                  => '(UTC+02:00) Beirut',
@@ -219,7 +219,7 @@ $languageStrings = array(
 	'ListView' => 'Lista Vista',
 	'MyCalendar' => 'Mi calendario',
 	'SharedCalendar' => 'Calendario compartido',
-    
+
     'LBL_CHANGE_OWNER' => 'Cambiar propietario',
     'LBL_TRANSFER_OWNERSHIP' => 'Transferencia de la propiedad',
     'LBL_TRANSFER_OWNERSHIP_TO_USER' => 'Transferir la propiedad al usuario',
@@ -234,7 +234,7 @@ $languageStrings = array(
     'Left Panel Hide' => 'Panel izquierdo Ocultar',
     'Row Height' => 'Alto de fila',
 	'LBL_RESTORE_USER_FAILED' => 'Error al restaurar el usuario. Ya existe un usuario CRM con este nombre de usuario.',
-    
+
     'LBL_DUPLICATE_USER_EXISTS' => 'Usuario ya existe',
 
 
