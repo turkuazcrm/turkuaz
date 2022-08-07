@@ -8,12 +8,12 @@
  * All Rights Reserved.
  *************************************************************************************/
 $languageStrings = array(
-    'Email Templates' => 'Email Templates',
+    'Email Templates' => 'Posta Şablonları',
     'LBL_ADD_RECORD' => 'Add Email Template',
 	'SINGLE_EmailTemplates' => 'Email Template',
 	'LBL_EMAIL_TEMPLATES'=> 'Email Templates',
 	'LBL_EMAIL_TEMPLATE' => 'Email Template',
-	
+
 	'LBL_TEMPLATE_NAME' => 'Template name',
 	'LBL_DESCRIPTION' => 'Description',
 	'LBL_SUBJECT' => 'Subject',
@@ -22,7 +22,7 @@ $languageStrings = array(
 	'LBL_MODULE_NAME' => 'Modül Adı',
 	'LBL_EMAIL_TEMPLATE_DESCRIPTION'=>'Manage templates for E-Mail module',
 	'LBL_NO_PERMISSIONS_TO_DELETE_SYSTEM_TEMPLATE' => 'Hayır İzinler sistem şablonu silmek için',
-	'LBL_RECORD_ID'                => 'Kayıt kodu'                 , 
+	'LBL_RECORD_ID'                => 'Kayıt kodu'                 ,
 );
 
 $jsLanguageStrings = array(

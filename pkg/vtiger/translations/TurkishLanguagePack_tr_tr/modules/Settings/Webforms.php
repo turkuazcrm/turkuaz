@@ -9,11 +9,11 @@
  ************************************************************************************/
 $languageStrings = array(
 	'SINGLE_Settings:Webforms'     => 'Webform'                     , // TODO: Review
-	'WebForm Name'                 => 'Webform Name'                , // TODO: Review
-	'Public Id'                    => 'Public Id'                   , // TODO: Review
+	'WebForm Name'                 => 'Webform Adı'                , // TODO: Review
+	'Public Id'                    => 'Kimlik Numarası'                   , // TODO: Review
 	'Enabled'                      => 'Status'                      , // TODO: Review
-	'Module'                       => 'Module'                      , // TODO: Review
-	'Return Url'                   => 'Return Url'                  , // TODO: Review
+	'Module'                       => 'Modül'                      , // TODO: Review
+	'Return Url'                   => 'Geri Dönülecek Adres'                  , // TODO: Review
 	'Post Url'                     => 'Post Url'                    , // TODO: Review
     'Captcha Enabled'              => 'Captcha etkin'               ,
 	'SINGLE_Webforms'              => 'Webform'                     , // TODO: Review
@@ -31,14 +31,14 @@ $languageStrings = array(
 	'LBL_EMBED_THE_FOLLOWING_FORM_IN_YOUR_WEBSITE' => 'Embed the following form in your website', // TODO: Review
 	'LBL_SELECT_VALUE'             => 'Select Value'                , // TODO: Review
 	'LBL_LABEL'                    => 'label'                       , // TODO: Review
-	'LBL_SAVE_FIELDS_ORDER' => 'Kaydet alanlar sipariş', 
+	'LBL_SAVE_FIELDS_ORDER' => 'Kaydet alanlar sipariş',
 	'LBL_HIDDEN' => 'Gizli',
 	'LBL_ENABLE_TARGET_MODULES_FOR_WEBFORM' => 'Webform için hedef modülleri etkinleştirme',
 	'LBL_ASSIGN_USERS' => 'Kullanıcı Atama',
     'LBL_ASSIGN_ROUND_ROBIN' => 'Round Robin yılında Kullanıcılar atama',
     'LBL_ROUNDROBIN_USERS_LIST' => 'Round Robin Kullanıcılar Listesi',
 
-  'LBL_ADD_RECORD' => 'Web Formunu Ekleyin',
+  'LBL_ADD_RECORD' => 'Web Formu Ekle',
 
 	'LBL_UPLOAD_DOCUMENTS' => 'Yükleme Belgeler',
 	'LBL_ADD_FILE_FIELD' => 'Yükleme Field Dosya',

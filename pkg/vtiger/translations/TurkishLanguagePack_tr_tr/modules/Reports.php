@@ -8,11 +8,11 @@
  * All Rights Reserved.
  ************************************************************************************/
 $languageStrings = array(
-	'Reports'                      => 'Reports'                     , // TODO: Review
+	'Reports'                      => 'Raporlar'                     , // TODO: Review
 	'SINGLE_Reports'               => 'Report'                      , // TODO: Review
 	'LBL_FOLDER_NOT_EMPTY'         => 'Folder is not empty'         ,
 	'LBL_MOVE_REPORT'              => 'Raporları Taşı'           ,
-	'LBL_CUSTOMIZE'                => 'Özellestir'                 ,
+	'LBL_CUSTOMIZE'                => 'Düzenle'                 ,
 	'LBL_REPORT_EXPORT_EXCEL'      => 'Export Excel'                ,
 	'LBL_REPORT_PRINT'             => 'Yazdır'                     ,
 	'LBL_STEP_1'                   => 'Step 1'                      ,
@@ -185,7 +185,7 @@ $languageStrings = array(
     'LBL_AUTO_GENERATED_REPORT_EMAIL' => 'Bu planlanmış bir raporu adına gönderilen bir otomatik olarak oluşturulan e-posta:.',
     'LBL_PIN_CHART_TO_DASHBOARD' => 'Dashboard Pin Şeması',
     'LBL_FILE_FORMAT' => 'dosya Formatı',
-    
+
     'Report Type' => 'Rapor Türü',
     'tabular' => 'Detay',
     'summary' => 'Detay',

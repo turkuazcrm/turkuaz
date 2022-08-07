@@ -8,9 +8,9 @@
  * All Rights Reserved.
  ************************************************************************************/
 $languageStrings = array(
-	'Profiles'                     => 'Profiller'                   , 
-	'SINGLE_Profiles'              => 'Profil'                      , 
-	'LBL_ADD_RECORD'               => 'Add Profile'                 , 
+	'Profiles'                     => 'Profiller'                   ,
+	'SINGLE_Profiles'              => 'Profil'                      ,
+	'LBL_ADD_RECORD'               => 'Add Profile'                 ,
 	'LBL_CREATE_PROFILE'           => 'Create Profile'              , // TODO: Review
 	'LBL_PROFILE_NAME'             => 'Profile name'                , // TODO: Review
 	'LBL_DESCRIPTION'              => 'Description'                 , // TODO: Review
@@ -23,15 +23,15 @@ $languageStrings = array(
 	'LBL_EDIT_RECORD'              => 'Edit'                        , // TODO: Review
 	'LBL_DUPLICATE_RECORD'         => 'Duplicate'                   , // TODO: Review
 	'LBL_DELETE_RECORD'            => 'Delete'                      , // TODO: Review
-	'LBL_VIEW_PRVILIGE'            => 'Göster'                     , 
-	'LBL_EDIT_PRVILIGE'            => 'Yarat/Düzenle'              , 
-	'LBL_DELETE_PRVILIGE'          => 'Sil'                         , 
+	'LBL_VIEW_PRVILIGE'            => 'Göster'                     ,
+	'LBL_EDIT_PRVILIGE'            => 'Yarat/Düzenle'              ,
+	'LBL_DELETE_PRVILIGE'          => 'Sil'                         ,
 	'LBL_INIVISIBLE'               => 'Invisible'                   , // TODO: Review
 	'LBL_READ_ONLY'                => 'Read only'                   , // TODO: Review
 	'LBL_WRITE'                    => 'Write'                       , // TODO: Review
 	'LBL_DELETE_PROFILE'           => 'Delete Profile'              , // TODO: Review
 	'LBL_TRANSFER_ROLES_TO_PROFILE' => 'Transfer roles to profile'   , // TODO: Review
-	'LBL_PROFILES'                 => 'Profiles'                    , // TODO: Review
+	'LBL_PROFILES'                 => 'Profiller'                    , // TODO: Review
 	'LBL_CHOOSE_PROFILES'          => 'Choose Profiles'             , // TODO: Review
 	'LBL_GLOBAL_PERMISSION_WARNING' => 'Uyarı: Bu profili ile ilişkili kullanıcılar CRM tüm kayıtları erişebilirsiniz',
 

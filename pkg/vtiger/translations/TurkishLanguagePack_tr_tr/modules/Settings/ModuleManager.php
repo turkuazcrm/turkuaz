@@ -33,7 +33,7 @@ $languageStrings = array(
         'LBL_SEARCH_FOR_EXTENSION'  => 'Uzatma ara',
         'LBL_DOWNLOADS' => 'Yüklemeler',
         'LBL_NO_EXTENSIONS_FOUND' => 'Bulunamadı Uzantıları',
-        'LBL_REGISTER_USER' => 'Üye Kaydı',	
+        'LBL_REGISTER_USER' => 'Üye Kaydı',
         'LBL_SETUP_CARD_DETAILS' => 'Kurulum Kartı Detayları',
         'LBL_SETUP_CARD' => 'Kurulum Kartı',
         'LBL_CARD_NUMBER' => 'Kart Numarası',
@@ -64,6 +64,10 @@ $languageStrings = array(
         'Install' => 'Kurmak',
         'Upgrade' => 'Yükseltmek',
         'LBL_RATE_IT' => 'Ver',
+        'LBL_DISCLAIMER_FOR_IMPORT_FROM_ZIP' => "<b>Uyarı - Özelleştirilmiş dosyalar CRM'inizi riske atabilir</b><br />
+        Bu özellik geliştiricilere yeni modülleri test edebilmeleri için eklendi. Eğer üçüncü parti bir yazılımın sağladığı bir dosya kuruyorsanız, sadece ve sadece yayıncıya güveniyorsanız bu işleme devam edin. Özel modüller CRM'inizi riske atabilecek güvenlik zaafiyetleri içerebilir. Kurmakta olduğunuz modül Vtiger tarafından incelenmemiştir.",
+        'LBL_ACCEPT_WITH_THE_DISCLAIMER' => 'Riskleri kabul ediyorum ve devam etmek istiyorum',
+        'LBL_IMPORT_MODULE_FROM_ZIP' => "Modülü Zip'ten İçe Aktar",
 );
 $jsLanguageStrings = array(
   'JS_PLEASE_SETUP_CARD_DETAILS_TO_INSTALL_THIS_EXTENSION'  => 'Kurulum kartı bilgileriniz bu eklenti yüklemek için lütfen',

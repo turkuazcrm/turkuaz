@@ -10,14 +10,15 @@
 $languageStrings = array(
 	'CronTasks'                    => 'Scheduler'                   , // TODO: Review
 	'Id'                           => 'Id'                          , // TODO: Review
-	'Cron Job'                     => 'Cron Job'                    , // TODO: Review
+	'Cron Job'                     => 'Zamanlanan İş'                    , // TODO: Review
 	'Frequency'                    => 'Frequency'                   , // TODO: Review
-	'Status'                       => 'Status'                      , // TODO: Review
-	'Last Start'                   => 'Last scan started'           , // TODO: Review
-	'Last End'                     => 'Last scan ended'             , // TODO: Review
-	'Sequence'                     => 'Sequence'                    , // TODO: Review
-	'LBL_COMPLETED'                => 'Completed'                   , // TODO: Review
+	'Status'                       => 'Durum'                      , // TODO: Review
+	'Last Start'                   => 'Son Taramanın Başlangıç Zamanı'           , // TODO: Review
+	'Last End'                     => 'Son Taramanın Bitiş Zamanı'             , // TODO: Review
+	'Sequence'                     => 'Dizi'                    , // TODO: Review
+	'LBL_COMPLETED'                => 'Tamamlandı'                   , // TODO: Review
 	'LBL_RUNNING'                  => 'Running'                     , // TODO: Review
-	'LBL_ACTIVE'                   => 'Active'                      , // TODO: Review
-	'LBL_INACTIVE'                 => 'In Active'                   , // TODO: Review
+	'LBL_ACTIVE'                   => 'Aktif'                      , // TODO: Review
+	'LBL_INACTIVE'                 => 'Pasif'                   , // TODO: Review
+    'Frequency(H:M)' => 'Sıklık(S:D)',
 );

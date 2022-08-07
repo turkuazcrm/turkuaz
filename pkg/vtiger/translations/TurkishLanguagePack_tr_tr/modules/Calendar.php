@@ -8,13 +8,13 @@
  * All Rights Reserved.
  ************************************************************************************/
 $languageStrings = array(
-    'Calendar'                     => 'Calendar'                      , 
-	'SINGLE_Calendar'              => 'Görev'                      , 
-	'LBL_ADD_TASK'                 => 'Add Görev'                    , 
-	'LBL_ADD_EVENT'                => 'Olay Ekle'                   , 
-	'LBL_RECORDS_LIST'             => 'Liste Görünümü'          , 
-	'LBL_EVENTS'                   => 'Olaylar'                     , 
-	'LBL_TODOS'                    => 'Görev'                   , 
+    'Calendar'                     => 'Takvim'                      ,
+	'SINGLE_Calendar'              => 'Görev'                      ,
+	'LBL_ADD_TASK'                 => 'Add Görev'                    ,
+	'LBL_ADD_EVENT'                => 'Olay Ekle'                   ,
+	'LBL_RECORDS_LIST'             => 'Liste Görünümü'          ,
+	'LBL_EVENTS'                   => 'Olaylar'                     ,
+	'LBL_TODOS'                    => 'Görev'                   ,
 	'LBL_CALENDAR_SETTINGS'        => 'Calendar Settings'           , // TODO: Review
 	'LBL_CALENDAR_SHARING'         => 'Calendar Sharing'            , // TODO: Review
 	'LBL_DEFAULT_EVENT_DURATION'   => 'Default Event Duration'      , // TODO: Review
@@ -22,39 +22,39 @@ $languageStrings = array(
 	'LBL_OTHER_EVENTS'             => 'Other Events'                , // TODO: Review
 	'LBL_MINUTES'                  => 'Minutes'                     , // TODO: Review
 	'LBL_SELECT_USERS'             => 'Select Users'                , // TODO: Review
-	'LBL_EVENT_OR_TASK'			   => 'Etkinlik / Görev'			, 
-	'LBL_TASK_INFORMATION'         => 'Bilgi Görev'              , 
+	'LBL_EVENT_OR_TASK'			   => 'Etkinlik / Görev'			,
+	'LBL_TASK_INFORMATION'         => 'Bilgi Görev'              ,
     'LBL_EVENT_INFORMATION'        => 'Etkinlik Ayrıntıları',
-	'Subject'                      => 'Konu'                        , 
-	'Start Date & Time'            => 'Başlangıç Tarihi & Zamanı', 
-	'Activity Type'                => 'Aktivite Tipi'               , 
-	'Send Notification'            => 'Hatırlatıcı Gönder'      , 
-	'Location'                     => 'Konum'                       , 
-	'End Date & Time'              => 'Bitiş Tarihi ve Zamanı'    , 
-	'Visibility'                   => 'Görünürlük'                  , 
+	'Subject'                      => 'Konu'                        ,
+	'Start Date & Time'            => 'Başlangıç Tarihi & Zamanı',
+	'Activity Type'                => 'Aktivite Tipi'               ,
+	'Send Notification'            => 'Hatırlatıcı Gönder'      ,
+	'Location'                     => 'Konum'                       ,
+	'End Date & Time'              => 'Bitiş Tarihi ve Zamanı'    ,
+	'Visibility'                   => 'Görünürlük'                  ,
 	'Recurrence'                   => 'Yinelenme'                  ,
-	'Private'                      => 'Özel'                       , 
+	'Private'                      => 'Özel'                       ,
 	'Public'                       => 'Herkese Açık'              ,
-	'LBL_ACTIVITY_TYPES'           => 'Activity Types'              , 
-	'LBL_CONTACTS_SUPPORT_END_DATE' => 'Destek Bitiş Tarihi'        , 
-	'LBL_CONTACTS_BIRTH_DAY'       => 'Date of Birth'               , 
+	'LBL_ACTIVITY_TYPES'           => 'Activity Types'              ,
+	'LBL_CONTACTS_SUPPORT_END_DATE' => 'Destek Bitiş Tarihi'        ,
+	'LBL_CONTACTS_BIRTH_DAY'       => 'Date of Birth'               ,
 	'LBL_ADDED_CALENDARS'          => 'Added Calendars'             , // TODO: Review
-	'Call'                         => 'Arama'                       , 
-	'Meeting'                      => 'Toplantı'                   , 
+	'Call'                         => 'Arama'                       ,
+	'Meeting'                      => 'Toplantı'                   ,
 	'Task'                         => 'Görev'                        , // TODO: Review
-	'Planned'                      => 'Planlandı'                  , 
-	'Completed'                    => 'Tamamlandı'                 , 
-	'Pending Input'                => 'Haber Bekleniyor'            , 
-	'Not Started'                  => 'Başlanmadı'                , 
+	'Planned'                      => 'Planlandı'                  ,
+	'Completed'                    => 'Tamamlandı'                 ,
+	'Pending Input'                => 'Haber Bekleniyor'            ,
+	'Not Started'                  => 'Başlanmadı'                ,
 	'Deferred'                     => 'Ertelendi'                   ,
-	'Held'                         => 'Yapıldı'                   , 
+	'Held'                         => 'Yapıldı'                   ,
 	'Not Held'                     => 'Yapılmadı'                 ,
-	'Medium'                       => 'Normal'                      , 
-	'LBL_CHANGE_OWNER'             => 'Sahibini Değiştir'         , 
-	'LBL_EVENT'                    => 'Olay'                        , 
-	'LBL_TASK'                     => 'Görev'                      , 
+	'Medium'                       => 'Normal'                      ,
+	'LBL_CHANGE_OWNER'             => 'Sahibini Değiştir'         ,
+	'LBL_EVENT'                    => 'Olay'                        ,
+	'LBL_TASK'                     => 'Görev'                      ,
 	'LBL_TASKS'					 => 'Görev',
-	'LBL_CALENDAR_VIEW'            => 'Calendar View'               , 
+	'LBL_CALENDAR_VIEW'            => 'Calendar View'               ,
 	'LBL_SHARED_CALENDAR'          => 'Shared Calendar'             , // TODO: Review
 	'LBL_DAY0'                     => 'Sunday'                      , // TODO: Review
 	'LBL_DAY1'                     => 'Monday'                      , // TODO: Review
@@ -85,7 +85,7 @@ $languageStrings = array(
 	'Tasks' => 'Görev',
 	'LBL_SELECT_FIELDS_FOR_RANGE' => 'Aralığı için alanları seçmek',
 	'LBL_DUPLICATE_VIEW_EXIST' => 'Takvim Görünüm zaten var',
-    
+
     // For Event Invitation
     'LBL_ACTIVITY_NOTIFICATION' => 'Bu olan bir faaliyet sizin için atanmış bir bildirim olduğunu',
     'LBL_ACTIVITY_INVITATION' => 'Bir etkinlik için davet edilmiştir',
@@ -107,7 +107,7 @@ $languageStrings = array(
 	'LBL_FUTURE_EVENTS_EDIT_INFO' => 'Bu, ve tüm aşağıdaki olaylar değişmiş olacak.</br> Geleceğe tüm değişiklikler kaybolacak.',
 	'LBL_ONLY_THIS_EVENT_EDIT_INFO' => 'Serideki diğer tüm olaylar aynı kalacak.',
 	'LBL_EDIT_RECURRING_EVENTS_INFO' => 'Eğer için değişiklikleri kaydetmek ister misiniz',
-	
+
 	'LBL_DELETE_RECURRING_EVENT' => 'Tekrarlanan Olay Sil',
 	'LBL_ALL_EVENTS_DELETE_INFO' => 'Serideki tüm etkinlikler silinecek.',
 	'LBL_FUTURE_EVENTS_DELETE_INFO' => 'Bu, ve tüm aşağıdaki olaylar silinecek.',
@@ -152,17 +152,17 @@ $languageStrings = array(
 	'LBL_TOTAL_TASKS_DUPLICATED' => 'yinelenen Görevlerin sayılı atlanır',
 );
 $jsLanguageStrings = array(
-	'LBL_ADD_EVENT_TASK'           => 'Add Event / Görev'            , 
+	'LBL_ADD_EVENT_TASK'           => 'Add Event / Görev'            ,
 	'JS_TASK_IS_SUCCESSFULLY_ADDED_TO_YOUR_CALENDAR' => 'Görev is successfully added to your Calendar', // TODO: Review
 	'LBL_CANT_SELECT_CONTACT_FROM_LEADS' => 'Teklifleri için ilgili Rehber seçemezsiniz', // TODO: Review
         'JS_FUTURE_EVENT_CANNOT_BE_HELD' => 'Gelecek Amaçlı edilemez',
-	
+
 	//Calendar view label translation
 	'LBL_MONTH' => 'Month',
 	'LBL_TODAY' => 'Today',
 	'LBL_DAY' => 'Day',
 	'LBL_WEEK' => 'Week',
-	
+
 	'LBL_SUNDAY' => 'Sunday',
 	'LBL_MONDAY' => 'Monday',
 	'LBL_TUESDAY' => 'Tuesday',
@@ -170,7 +170,7 @@ $jsLanguageStrings = array(
 	'LBL_THURSDAY' => 'Thursday',
 	'LBL_FRIDAY' => 'Friday',
 	'LBL_SATURDAY' => 'Saturday',
-	
+
 	'LBL_SUN' => 'Sun',
 	'LBL_MON' => 'Mon',
 	'LBL_TUE' => 'Tue',
@@ -178,7 +178,7 @@ $jsLanguageStrings = array(
 	'LBL_THU' => 'Thu',
 	'LBL_FRI' => 'Fri',
 	'LBL_SAT' => 'Sat',
-	
+
 	'LBL_JANUARY' => 'January',
 	'LBL_FEBRUARY' => 'February',
 	'LBL_MARCH' => 'March',
@@ -191,7 +191,7 @@ $jsLanguageStrings = array(
 	'LBL_OCTOBER' => 'October',
 	'LBL_NOVEMBER' => 'November',
 	'LBL_DECEMBER' => 'December',
-	
+
 	'LBL_JAN' => 'Jan',
 	'LBL_FEB' => 'Feb',
 	'LBL_MAR' => 'Mar',
@@ -204,10 +204,10 @@ $jsLanguageStrings = array(
 	'LBL_OCT' => 'Oct',
 	'LBL_NOV' => 'Nov',
 	'LBL_DEC' => 'Dec',
-	
+
 	'LBL_ALL_DAY' => 'All-Day',
 	//End
-	
+
 	//Fixing colors for Shared Calendar and My Calendar
 	'JS_CALENDAR_VIEW_COLOR_UPDATED_SUCCESSFULLY' => 'Takvim görünümü renk başarıyla güncellendi',
 	'JS_CALENDAR_VIEW_DELETE_CONFIRMATION' => 'Eğer bu Takvim görünümünü silmek istediğinizden emin misiniz?',

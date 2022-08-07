@@ -9,15 +9,15 @@
  ************************************************************************************/
 $languageStrings = array(
 	'Accounts'                     => 'Organizations & Contacts'    , // TODO: Review
-	'LBL_ADD_CUSTOM_RULE'          => 'Özel Hak Kuralı Ekle'      , 
-	'Read Only'                    => 'R'                           , 
-	'Read Write'                   => 'R+W'                         , 
+	'LBL_ADD_CUSTOM_RULE'          => 'Özel Hak Kuralı Ekle'      ,
+	'Read Only'                    => 'R'                           ,
+	'Read Write'                   => 'R+W'                         ,
 	'LBL_ADD_CUSTOM_RULE_TO'       => 'Add Custom Rule to'          , // TODO: Review
-	'LBL_CAN_ACCESSED_BY'          => 'Tarafından erişilebilir'   , 
-	'LBL_PRIVILEGES'               => 'Haklar'                      , 
-	'LBL_SHARING_RULE'             => 'Sharing Rules'               , 
-	'LBL_RULE_NO'                  => 'Kural No.'                   , 
-	'LBL_MODULE'                   => 'Module'                      , // TODO: Review
+	'LBL_CAN_ACCESSED_BY'          => 'Tarafından erişilebilir'   ,
+	'LBL_PRIVILEGES'               => 'Haklar'                      ,
+	'LBL_SHARING_RULE'             => 'Sharing Rules'               ,
+	'LBL_RULE_NO'                  => 'Kural No.'                   ,
+	'LBL_MODULE'                   => 'Modül'                      , // TODO: Review
 	'LBL_ADVANCED_SHARING_RULES'   => 'Advanced Sharing Rules'      , // TODO: Review
 	'LBL_WITH_PERMISSIONS'         => 'With Permissions'            , // TODO: Review
 	'LBL_APPLY_NEW_SHARING_RULES'  => 'Apply New Sharing Rules'     , // TODO: Review

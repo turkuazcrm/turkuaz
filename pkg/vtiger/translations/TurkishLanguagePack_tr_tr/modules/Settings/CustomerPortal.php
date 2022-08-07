@@ -8,12 +8,12 @@
  * All Rights Reserved.
  ************************************************************************************/
 $languageStrings = array(
-	'CustomerPortal'               => 'Customer Portal'             , // TODO: Review
+	'CustomerPortal'               => 'Müşteri Portalı'             , // TODO: Review
 	'LBL_PORTAL_DESCRIPTION'       => 'Setup Privileges of Portal User', // TODO: Review
 	'LBL_PRIVILEGES'               => 'Privileges'                  , // TODO: Review
-	'LBL_DEFAULT_ASSIGNEE'         => 'Default Assignee'            , // TODO: Review
-	'LBL_PORTAL_URL'               => 'Portal Url'                  , // TODO: Review
-	'LBL_MODULE_NAME'              => 'Module Name'                 , // TODO: Review
+	'LBL_DEFAULT_ASSIGNEE'         => 'Varsayılan Atanan'            , // TODO: Review
+	'LBL_PORTAL_URL'               => 'Portal Adresi'                  , // TODO: Review
+	'LBL_MODULE_NAME'              => 'Modül İsmi'                 , // TODO: Review
 	'LBL_ENABLE_MODULE'            => 'Enable Module'               , // TODO: Review
 	'LBL_VIEW_ALL_RECORDS'         => 'See Records across Organization', // TODO: Review
 	'LBL_PREVILEGES_MESSAGE'       => 'This User\'s privileges will be applied to the Portal User.', // TODO: Review
@@ -23,7 +23,7 @@ $languageStrings = array(
     "LBL_CONTACTS_ENABLE_MESSAGE"=>"Portal erişim İletişim bilgileri sayfasından etkin olduğunda Rehber giriş bilgilerini gönderilecektir.",
     "LBL_SUPPORT_NOTIFY_MESSAGE"=>"Destek sözleşme yenileme uyarısı girilen gün sayısına dayalı müşteri portalında bildirilir.",
     "LBL_ADD_DOCUMENT"=>"Belgeyi ekle",
-    "LBL_OPEN_TICKETS"=>"Açık Biletleri",
+    "LBL_OPEN_TICKETS"=>"Açık Biletler",
     "LBL_CREATE_TICKET"=>"Bilet Oluştur",
     "LBL_ADD_SHORTCUT"=>"Kısayol Ekle",
     "OpenTicketsByPriority"=>"Öncelik açık bilet",
@@ -38,7 +38,7 @@ $languageStrings = array(
     "products_or_services"=>"Tümünü göster %s",
     "faq"=>"Tüm yayınlanan göster %s",
     "LBL_LAYOUT_HEADER"=>"Portal Menü",
-    "LBL_HOME"=>"Ev",
+    "LBL_HOME"=>"Ana Sayfa",
     "LBL_CONTACT_NOTIFICATION"=>"İletişim Destek Bildirimi",
     "LBL_DAYS_BEFORE"=>"Gün önce",
     "LBL_HOME_LAYOUT"=>"Portal Ana Sayfa Düzeni",

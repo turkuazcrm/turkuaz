@@ -82,7 +82,7 @@ $languageStrings = array(
     'LBL_LINEITEM_BLOCK_GROUP' => 'LineItems bloğu için Grup Taxt',
     'LBL_LINEITEM_BLOCK_INDIVIDUAL' => 'LineItems bloğu için bireysel vergi',
     'LBL_ADD_PDF' => 'ekle pdf',
-	
+
 	//Translation for module
 	'Calendar'						=> 'Yapılacak'						,
 	'Send Mail'						=> 'Posta Gönder',
@@ -99,13 +99,13 @@ $languageStrings = array(
     'LBL_VTCreateTodoTask' => 'Görev',
     'LBL_VTCreateEventTask' => 'Olay',
     'LBL_VTUpdateFieldsTask' => 'Saha Güncelleme',
-    'LBL_VTSMSTask' => 'SMS', 
+    'LBL_VTSMSTask' => 'SMS',
     'LBL_VTPushNotificationTask' => 'Mobil Bildirim',
     'LBL_VTCreateEntityTask' => 'Kayıt Oluştur',
 	'LBL_MAX_SCHEDULED_WORKFLOWS_EXCEEDED' => 'planlanan iş akışlarının maksimum sayısı (%s) aşıldı',
 
   'LBL_EDITING_WORKFLOW' => 'Düzenleme İş Akışı',
-  'LBL_ADD_RECORD' => 'Yeni İş Akışı',
+  'LBL_ADD_RECORD' => 'İş Akışı Ekle',
   'ON_SCHEDULE' => 'Zamanlama',
   'LBL_RUN_WORKFLOW' => 'Çalışma Akışı',
   'LBL_AT_TIME' => 'Zaman',
@@ -141,7 +141,7 @@ $languageStrings = array(
   'LBL_SELECT_FIELDS' => 'Alanları Seç',
   'LBL_INCLUDES_CREATION' => 'Oluşturma İçerir ',
   'LBL_ACTION_FOR_WORKFLOW' => 'İş Akışı için eylem ',
-  'LBL_WORKFLOW_SEARCH' => 'Ada göre arama ',
+  'LBL_WORKFLOW_SEARCH' => 'İsme Göre Ara',
 
 );
 $jsLanguageStrings = array(
