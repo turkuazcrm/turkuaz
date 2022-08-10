@@ -7,53 +7,56 @@
  * Portions created by vtiger are Copyright (C) vtiger.
  * All Rights Reserved.
  ************************************************************************************/
-$languageStrings = array(
-	'Leads'                        => 'Kaynaklar'                   , 
-	'SINGLE_Leads'                 => 'Kaynak'                      , 
-	'LBL_RECORDS_LIST'             => 'Leads List'                  , 
-	'LBL_ADD_RECORD'               => 'Add Lead'                    , 
-	'LBL_LEAD_INFORMATION'         => 'Kaynak Bilgisi'              , 
-	'Lead No'                      => 'Kaynak No'                   , 
-	'Company'                      => 'Şirket'                     , 
-	'Designation'                  => 'Ünvan'                      , 
-	'Website'                      => 'Website'                     , 
-	'Industry'                     => 'Sektör'                     , 
-	'Lead Status'                  => 'Kaynak Statüsü'            , 
-	'No Of Employees'              => 'Çalışan Sayısı'         , 
-	'--None--'                     => '--Hiç Biri--'               , 
-	'Mr.'                          => 'Bay.'                        , 
-	'Ms.'                          => 'Bayan.'                      , 
-	'Mrs.'                         => 'Bayan.'                      , 
-	'Dr.'                          => 'Dr.'                         , 
-	'Prof.'                        => 'Prof.'                       , 
-	'Attempted to Contact'         => 'İlgili Kişi Girişimi'     , 
-	'Cold'                         => 'Soğuk'                      , 
-	'Contact in Future'            => 'Gelecekte Ara'               , 
-	'Contacted'                    => 'Arandı'                     , 
-	'Hot'                          => 'Sıcak'                      , 
-	'Junk Lead'                    => 'Kötü Kaynak'               , 
-	'Lost Lead'                    => 'Kaybedilmiş Kaynak'         , 
-	'Not Contacted'                => 'İrtibatageçilemedi'        , 
-	'Pre Qualified'                => 'Zaten uygundu'               , 
-	'Qualified'                    => 'Uygun bulundu'               , 
-	'Warm'                         => 'Sıcak'                      , 
-	'LBL_CONVERT_LEAD'             => 'Kaynağı Dönüştür:'     , 
-	'LBL_TRANSFER_RELATED_RECORD'  => 'Transfer related record to'  , 
-	'LBL_CONVERT_LEAD_ERROR'       => 'You have to enable either Organization or Contact to convert the Lead', 
-	'LBL_LEADS_FIELD_MAPPING_INCOMPLETE' => 'Leads Field Mapping is incomplete(Settings > Module Manager > Leads > Leads Field Mapping)', 
-	'LBL_LEADS_FIELD_MAPPING'      => 'Leads Field Mapping'         , 
-	'LBL_CUSTOM_FIELD_MAPPING'     => 'Dönüşüm Veri Haritalama Kurşun'          , 
-    'LBL_IMAGE_INFORMATION' => 'Profil Resmi',
-    'Lead Image' => 'Kurşun Görüntü',
-	
+$languageStrings = [
+    'SINGLE_Leads'                       => 'Kaynak'                                                                   ,
 
-  'Phone' => 'Birincil Telefon',
-  'Secondary Email' => 'İkincil E-Posta',
-  'Email' => 'Birincil E-Posta',
+    'Company'                            => 'Şirket'                                                                   ,
+    'Designation'                        => 'Designation'                                                              , // TODO:
+    'Email'                              => 'Birincil E-Posta Adresi'                                                  ,
+    'Industry'                           => 'Sektör'                                                                   ,
+    'Lead Image'                         => 'Kaynak Fotoğrafı'                                                         ,
+    'Lead No'                            => 'Kaynak No'                                                                ,
+    'Lead Status'                        => 'Kaynak Statüsü'                                                           ,
+    'Leads'                              => 'Kaynaklar'                                                                ,
+    'No Of Employees'                    => 'Çalışan Sayısı'                                                           ,
+    'Phone'                              => 'Birincil Telefon'                                                         ,
+    'Secondary Email'                    => 'İkincil E-Posta Adresi'                                                   ,
+    'Website'                            => 'Web Sayfası'                                                              ,
 
-);
-$jsLanguageStrings = array(
-	'JS_SELECT_CONTACTS'           => 'Select Contacts to proceed'  , 
-	'JS_SELECT_ORGANIZATION'       => 'Select Organization to proceed', 
-	'JS_SELECT_ORGANIZATION_OR_CONTACT_TO_CONVERT_LEAD' => 'Conversion requires selection of Contact or Organization', 
-);
+    '--None--'                           => '--Hiç Biri--'                                                             ,
+
+    'Attempted to Contact'               => 'İletişime Geçilmeye Çalışıldı'                                            ,
+    'Cold'                               => 'Cold'                                                                     , // TODO:
+    'Contacted'                          => 'İrtibata Geçildi'                                                         ,
+    'Contact in Future'                  => 'Gelecekte Ara'                                                            ,
+    'Hot'                                => 'Hot'                                                                      , // TODO:
+    'Junk Lead'                          => 'Kötü Kaynak'                                                              ,
+    'Lost Lead'                          => 'Kaybedilmiş Kaynak'                                                       ,
+    'Not Contacted'                      => 'İrtibata Geçilmedi'                                                       ,
+    'Pre Qualified'                      => 'Elemeden Geçti'                                                           ,
+    'Qualified'                          => 'Uygun Bulundu'                                                            ,
+    'Warm'                               => 'Warm'                                                                     , // TODO:
+
+    'Mr.'                                => 'Bay'                                                                      ,
+    'Ms.'                                => 'Bayan'                                                                    ,
+    'Mrs.'                               => 'Madam'                                                                    ,
+    'Dr.'                                => 'Dr.'                                                                      ,
+    'Prof.'                              => 'Prof.'                                                                    ,
+
+    'LBL_ADD_RECORD'                     => 'Kaynak Ekle'                                                              ,
+    'LBL_CONVERT_LEAD'                   => 'Kaynağı Dönüştür'                                                         ,
+    'LBL_CONVERT_LEAD_ERROR'             => 'You have to enable either Organization or Contact to convert the Lead'    , // TODO:
+    'LBL_CUSTOM_FIELD_MAPPING'           => 'Dönüşüm Veri Haritalama Kurşun'                                           , // TODO:
+    'LBL_IMAGE_INFORMATION'              => 'Profil Resmi'                                                             ,
+    'LBL_LEADS_FIELD_MAPPING'            => 'Leads Field Mapping'                                                      , // TODO:
+    'LBL_LEADS_FIELD_MAPPING_INCOMPLETE' => 'Leads Field Mapping is incomplete'                                        , // TODO:
+    'LBL_LEAD_INFORMATION'               => 'Kaynak Bilgisi'                                                           ,
+    'LBL_RECORDS_LIST'                   => 'Leads List'                                                               , // TODO:
+    'LBL_TRANSFER_RELATED_RECORD'        => 'İlgili içeriği taşı'                                                      ,
+];
+
+$jsLanguageStrings = [
+    'JS_SELECT_CONTACTS'                                => 'Select Contacts to proceed'                                , // TODO:
+    'JS_SELECT_ORGANIZATION'                            => 'Select Organization to proceed'                            , // TODO:
+    'JS_SELECT_ORGANIZATION_OR_CONTACT_TO_CONVERT_LEAD' => 'Conversion requires selection of Contact or Organization'  , // TODO:
+];
