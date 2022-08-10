@@ -14,3 +14,11 @@
 !/test/vtlib/HTML/.keep
 /test/wordtemplatedownload
 !/test/wordtemplatedownload/.keep
+
+/tests/_data
+!/tests/_data/.keep
+/tests/_output
+!/tests/_output/.keep
+/tests/_support/_generated
+
+/vendor/
