@@ -43,7 +43,8 @@ Vagrant.configure('2') do |config|
   config.vm.provision :shell, inline: <<-SHELL
     apt-get update
     apt-get install --yes --no-install-recommends git apache2 php \
-       php-mbstring php-curl php-imap php-xml php-mysql mariadb-server \
+       php-mbstring php-curl php-imap php-xml php-mysql php-zip \
+       unzip mariadb-server docker.io \
        yarnpkg composer
     su vagrant -c 'yarnpkg global add prettier @prettier/plugin-php'
     mariadb -e "
@@ -58,4 +59,11 @@ sql_mode = ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
 EOF
     systemctl restart mariadb.service
   SHELL
+
+  config.vm.provision :docker do |container|
+    container.run 'selenium-firefox', image: 'selenium/standalone-firefox:4.3.0', args: %w[
+      --publish 4444:4444
+      --net host
+    ].join(' ')
+  end
 end
