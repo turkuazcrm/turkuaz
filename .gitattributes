@@ -1,0 +1,10 @@
+include/Zend/**           linguist-vendored
+include/simplehtmldom/**  linguist-vendored
+kcfinder/**               linguist-vendored
+layouts/v7/lib/**         linguist-vendored
+libraries/**              linguist-vendored
+libraries/log4php/*      -linguist-vendored
+libraries/Oauth/*        -linguist-vendored
+migrate/resources/**      linguist-vendored
+test/migration/**         linguist-vendored
+vtlib/thirdparty/**       linguist-vendored
