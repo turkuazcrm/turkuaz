@@ -4,7 +4,7 @@
  * ("License"); You may not use this file except in compliance with the License
  * The Original Code is:  vtiger CRM Open Source
  * The Initial Developer of the Original Code is vtiger.
- * Portions created by vtiger are Copyright (C) vtiger. 
+ * Portions created by vtiger are Copyright (C) vtiger.
  * All Rights Reserved. Contributor(s): Valmir C. Trindade - Brazilian Portuguese Translation - www.ttcasolucoes.com.br
  *************************************************************************************/
 
@@ -18,7 +18,7 @@ $languageStrings = array(
 	'LBL_DECLINE' => 'Declinar',
 	'LBL_ACCEPT_AND_INSTALL' => 'Aceitar e Instalar',
 	'LBL_OK' => 'OK',
-	'LBL_EXTENSION_NOT_COMPATABLE' => 'A Extensão não é Compatível',
+	'LBL_EXTENSION_NOT_COMPATIBLE' => 'A Extensão não é Compatível',
 	'LBL_INVALID_FILE' => 'Arquivo Inválido',
 	'LBL_NO_LICENSE_PROVIDED' => 'Nenhuma Licença Fornecida',
 	'LBL_INSTALLATION' => 'Instalação',
@@ -28,7 +28,7 @@ $languageStrings = array(
 	'LBL_UPDATED_MODULE' => ' O Módulo foi atualizado com sucesso.',
 	'LBL_UPDATING_MODULE' => 'Módulo Atualização',
     'LBL_MARKET_PLACE' => 'Loja',
-    
+
     //Extension Store translations
     'LBL_VTIGER_EXTENSION_STORE' => 'Loja de Extensões Vtiger',
     'LBL_SEARCH_FOR_AN_EXTENSION'  => 'Pesquisar por uma Extensão..',
@@ -100,7 +100,7 @@ $languageStrings = array(
     'LBL_UNAUTHORIZED' => 'Não Autorizado',
     'LBL_EXPIRY_DATE'  => 'Data Validade',
 	'LBL_LOGOUT' => 'Desconectar',
-    
+
     'firstname' => 'Nome',
     'lastname' => 'Sobrenome',
     'email' => 'Email',
@@ -129,7 +129,7 @@ $jsLanguageStrings = array(
     'JS_PLEASE_SETUP_CARD_DETAILS_TO_INSTALL_EXTENSION' => 'Configure os detalhes do Cartão para instalar a extensão',
     'JS_PLEASE_LOGIN_TO_MARKETPLACE_FOR_UNINSTALLING_EXTENSION' => 'Acesse a Loja para desinstalar a extensão',
 	'JS_LBL_ARE_YOU_SURE_YOU_WANT_TO_INSTALL_THIS_EXTENSION' => 'Você tem certeza que deseja instalar esta Extensão?',
-    'JS_CARD_DETAILS_UPDATED' => 'Detalhes do Cartão atualizado!', 
+    'JS_CARD_DETAILS_UPDATED' => 'Detalhes do Cartão atualizado!',
 	'JS_LBL_ARE_YOU_SURE_YOU_WANT_TO_LOGOUT_FROM_EXTENSION' => 'Você tem certeza que deseja desconectar da extensão?',
     'JS_PASSWORDS_MISMATCH' => "As Senhas não combinam!",
     'JS_ARE_YOU_SURE_UNINSTALL' => 'Você tem certeza que deseja desinstalar esta Extensão',

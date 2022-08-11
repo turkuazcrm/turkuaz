@@ -20,7 +20,7 @@ $languageStrings = array(
 	'LBL_ACCEPT_AND_INSTALL'       => 'Accept and Install'          , // TODO: Review
 	'LBL_ALREADY_EXISTS'           => 'Already Exists'              , // TODO: Review
 	'LBL_OK'                       => 'OK'                          , // TODO: Review
-	'LBL_EXTENSION_NOT_COMPATABLE' => 'Extension is not vtiger CRM compatible', // TODO: Review
+	'LBL_EXTENSION_NOT_COMPATIBLE' => 'Extension is not vtiger CRM compatible', // TODO: Review
 	'LBL_INVALID_FILE'             => 'Invalid File'                , // TODO: Review
 	'LBL_NO_LICENSE_PROVIDED'      => 'No License Provided'         , // TODO: Review
 	'LBL_INSTALLATION'             => 'Installation'                , // TODO: Review
@@ -33,7 +33,7 @@ $languageStrings = array(
         'LBL_SEARCH_FOR_EXTENSION'  => 'Search for Extension',
         'LBL_DOWNLOADS' => 'Downloads',
         'LBL_NO_EXTENSIONS_FOUND' => 'No Extensions Found',
-        'LBL_REGISTER_USER' => 'Register User',	
+        'LBL_REGISTER_USER' => 'Register User',
         'LBL_SETUP_CARD_DETAILS' => 'Setup Card Details',
         'LBL_SETUP_CARD' => 'Setup Card',
         'LBL_CARD_NUMBER' => 'Card Number',
@@ -82,7 +82,7 @@ $languageStrings = array(
         'LBL_EXTENSION_STORE' => 'Extension Store',
         'LBL_ACCEPT_WITH_THE_DISCLAIMER' => 'I accept the disclaimer and would like to proceed',
         'LBL_INSTALL_FROM_ZIP' => 'Install from zip file',
-        
+
         'LBL_UPDATE_MODULE_FROM_FILE' => 'Update Module from file',
         'LBL_UPDATED_MODULE' => ' module was updated successfully.',
         'LBL__UPDATING_MODULE' => 'Updating Module',
@@ -91,10 +91,10 @@ $languageStrings = array(
         'LBL_UPDATE_NOW' => 'Update Now',
         'LBL_IMPORT_NOW' => 'Import Now',
         'LBL_OK' => 'Ok',
-        'LBL_DISCLAIMER_FOR_IMPORT_FROM_ZIP' => '<b>Disclaimer - Custom Files could put your CRM at risk</b><br />  
+        'LBL_DISCLAIMER_FOR_IMPORT_FROM_ZIP' => '<b>Disclaimer - Custom Files could put your CRM at risk</b><br />
                                               This functionality has been made available for Developers to test new modules.
                                               If you are installing from a file provided 3rd party, please proceed only if you trust the publisher. Custom Modules could include security vulnerabilities and overwrite system files putting your CRM at risk. The module you are about to install has not been reviewed by Vtiger.',
-    
+
 );
 $jsLanguageStrings = array(
     'JS_ON' => 'on',

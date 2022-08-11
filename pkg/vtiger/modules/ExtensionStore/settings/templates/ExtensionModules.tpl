@@ -1,5 +1,5 @@
 {*<!--
-* 
+*
 * Copyright (C) www.vtiger.com. All rights reserved.
 * @license Proprietary
 *
@@ -36,7 +36,7 @@
                                     {assign var=imageSource value=$EXTENSION->get('thumbnailURL')}
                                 {else}
                                     {assign var=imageSource value= vimage_path('unavailable.png')}
-                                {/if}     
+                                {/if}
                                     <img class="thumbnailImage" src="{$imageSource}"/>
                             </span>
                         </div>
@@ -77,7 +77,7 @@
                                                  <button class="oneclickInstallPaid btn btn-info {if ($REGISTRATION_STATUS) and ($PASSWORD_STATUS)}authenticated {else} loginRequired{/if}" data-trial=false>{vtranslate('LBL_BUY',$QUALIFIED_MODULE)}${$EXTENSION->get('price')}</button>
                                             {/if}
                                         {else}
-                                            <span class="alert alert-error">{vtranslate('LBL_EXTENSION_NOT_COMPATABLE', $QUALIFIED_MODULE)}</span>
+                                            <span class="alert alert-error">{vtranslate('LBL_EXTENSION_NOT_COMPATIBLE', $QUALIFIED_MODULE)}</span>
                                         {/if}
                                     </div>
                                 </div>

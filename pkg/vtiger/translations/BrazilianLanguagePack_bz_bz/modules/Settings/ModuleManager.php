@@ -4,7 +4,7 @@
  * ("License"); You may not use this file except in compliance with the License
  * The Original Code is:  vtiger CRM Open Source
  * The Initial Developer of the Original Code is vtiger.
- * Portions created by vtiger are Copyright (C) vtiger. 
+ * Portions created by vtiger are Copyright (C) vtiger.
  * All Rights Reserved. Contributor(s): Valmir C. Trindade - Brazilian Portuguese Translation - www.ttcasolucoes.com.br
  *************************************************************************************/
 $languageStrings = array(
@@ -21,7 +21,7 @@ $languageStrings = array(
 	'LBL_ACCEPT_AND_INSTALL' => 'Aceitar e Instalar',
 	'LBL_ALREADY_EXISTS' => 'Já existe',
 	'LBL_OK' => 'OK',
-	'LBL_EXTENSION_NOT_COMPATABLE' => 'A Extensão não compatível com o Vtiger CRM',
+	'LBL_EXTENSION_NOT_COMPATIBLE' => 'A Extensão não compatível com o Vtiger CRM',
 	'LBL_INVALID_FILE' => 'Arquivo inválido',
 	'LBL_NO_LICENSE_PROVIDED' => 'Nenhuma Licença foi Fornecida',
 	'LBL_INSTALLATION' => 'Instalação',
@@ -54,7 +54,7 @@ $languageStrings = array(
 	'LBL_IMPORT_MODULE_FROM_ZIP' => 'Importar Módulo a partir do Zip',
 	'LBL_UPDATE_NOW' => 'Atualizar Agora',
 	'LBL_IMPORT_NOW' => 'Importar Agora',
-	'LBL_DISCLAIMER_FOR_IMPORT_FROM_ZIP' => '<b>Aviso - Arquivos customizados podem colocar seu CRM em risco</b> <br>  
+	'LBL_DISCLAIMER_FOR_IMPORT_FROM_ZIP' => '<b>Aviso - Arquivos customizados podem colocar seu CRM em risco</b> <br>
                                                  Esta funcionalidade foi disponibilizada para que os Desenvolvedores testem seus novos módulos.
                                                  Se você está instalando a partir de um arquivo fornecido por terceiros, por favor, prossiga somente se confiar no fornecedor. Módulos customizados podem incluir vulnerabilidades de segurança e sobrescrever arquivos do Sistema colocando em risco seu CRM. O módulo que você está prestes a instalar não foi revisto pela equipe do Vtiger.',
 );

@@ -18,7 +18,7 @@ $languageStrings = array(
 	'LBL_DECLINE' => 'Decline',
 	'LBL_ACCEPT_AND_INSTALL' => 'Accept and Install',
 	'LBL_OK' => 'OK',
-	'LBL_EXTENSION_NOT_COMPATABLE' => 'Extension is not Compatable',
+	'LBL_EXTENSION_NOT_COMPATIBLE' => 'Extension is not Compatible',
 	'LBL_INVALID_FILE' => 'Invalid File',
 	'LBL_NO_LICENSE_PROVIDED' => 'No License Provided',
 	'LBL_INSTALLATION' => 'Installation',
@@ -27,7 +27,7 @@ $languageStrings = array(
 	'LBL_INSTALLATION_LOG' => 'Installation Log',
 	'LBL_UPDATED_MODULE' => ' module was updated successfully.',
 	'LBL_UPDATING_MODULE' => 'Updating Module',
-    
+
         //Extension Store translations
         'LBL_VTIGER_EXTENSION_STORE' => 'Vtiger Extension Store',
         'LBL_SEARCH_FOR_AN_EXTENSION'  => 'Search for an extension..',
@@ -98,7 +98,7 @@ $languageStrings = array(
         'LBL_SIGNUP_FOR_MARKET_PLACE' => 'Signup for Marketplace',
         'LBL_UNAUTHORIZED' => 'Unauthorized',
         'LBL_EXPIRY_DATE'  => 'Expiry Date',
-    
+
         'firstname' => 'First Name',
         'lastname' => 'Last Name',
         'email' => 'Email',
@@ -122,6 +122,6 @@ $jsLanguageStrings = array(
   'JS_PLEASE_LOGIN_TO_MARKETPLACE_FOR_INSTALLING_EXTENSION' => 'Please login to marketplace for installing extension',
   'JS_PLEASE_SETUP_CARD_DETAILS_TO_INSTALL_EXTENSION' => 'Please setup card details to install extension',
   'JS_PLEASE_LOGIN_TO_MARKETPLACE_FOR_UNINSTALLING_EXTENSION' => 'Please login to marketplace for uninstalling extension',
-  'JS_CARD_DETAILS_UPDATED' => 'Card details updated!',  
+  'JS_CARD_DETAILS_UPDATED' => 'Card details updated!',
   'JS_PASSWORDS_MISMATCH' => "Passwords didn't match!",
 );

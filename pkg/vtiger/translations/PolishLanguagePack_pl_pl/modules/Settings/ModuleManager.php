@@ -20,7 +20,7 @@ $languageStrings = array(
 	'LBL_ACCEPT_AND_INSTALL' => 'Akceptuj i instaluj',
 	'LBL_ALREADY_EXISTS' => 'Już istnieje',
 	'LBL_OK' => 'OK',
-	'LBL_EXTENSION_NOT_COMPATABLE' => 'Moduł nie jest kompatybilny z tą wersją systemu',
+	'LBL_EXTENSION_NOT_COMPATIBLE' => 'Moduł nie jest kompatybilny z tą wersją systemu',
 	'LBL_INVALID_FILE' => 'Niepoprawny format pliku',
 	'LBL_NO_LICENSE_PROVIDED' => 'Brak licencji producenta',
 	'LBL_INSTALLATION' => 'Instalacja',
@@ -42,17 +42,17 @@ $languageStrings = array(
 	'LBL_INVALID_IMPORT_TRY_AGAIN' => ' niepoprawny import, spróbuj ponownie...',
 	'LBL_IMPORTED_MODULE' => ' moduł został zaimportowany poprawnie.',
 	'LBL__IMPORTING_MODULE' => 'Importowanie modułu',
-	
+
 	'LBL_UPDATE_MODULE_FROM_FILE' => 'Uaktualnij moduł z pliku',
 	'LBL_UPDATED_MODULE' => ' moduł został zaktualizowany.',
 	'LBL__UPDATING_MODULE' => 'Aktualizacja modułu',
-	
+
         //Extension Store translations
         'LBL_VTIGER_EXTENSION_STORE' => 'Rozszerzenie Vtiger sklep',
         'LBL_SEARCH_FOR_EXTENSION'  => 'Szukaj Extension',
         'LBL_DOWNLOADS' => 'Pliki do pobrania',
         'LBL_NO_EXTENSIONS_FOUND' => 'Nie znaleziono Rozszerzenia',
-        'LBL_REGISTER_USER' => 'Rejestracja konta',	
+        'LBL_REGISTER_USER' => 'Rejestracja konta',
         'LBL_SETUP_CARD_DETAILS' => 'Card setup',
         'LBL_SETUP_CARD' => 'Karta Ustawienia',
         'LBL_CARD_NUMBER' => 'Liczba kart',

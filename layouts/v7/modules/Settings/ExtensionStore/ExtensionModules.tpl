@@ -47,7 +47,7 @@
 									<img width="100%" height="100%" class="thumbnailImage" src="{$imageSource}"/>
 								{else}
 									<i class="fa fa-picture-o" style="color:#ddd;font-size: 90px;" title="Image not available"></i>
-								{/if} 
+								{/if}
 
 							</div>
 						</div>
@@ -71,22 +71,22 @@
 													{if $EXTENSION_MODULE_MODEL neq 'false' && $EXTENSION_MODULE_MODEL->get('trial')}
 														<span class="alert alert-info">{vtranslate('LBL_TRIAL_INSTALLED', $QUALIFIED_MODULE)}</span>
 													{else}
-														<span class="alert alert-info" style="vertical-align:middle; padding: 3px 8px;">{vtranslate('LBL_INSTALLED', $QUALIFIED_MODULE)}</span> 
+														<span class="alert alert-info" style="vertical-align:middle; padding: 3px 8px;">{vtranslate('LBL_INSTALLED', $QUALIFIED_MODULE)}</span>
 													{/if}
 													{if !($EXTENSION->get('price') eq 'Free' or $EXTENSION->get('price') eq 0)}
 														&nbsp;&nbsp;
 														<button class="oneclickInstallPaid btn btn-info {if $IS_AUTH}authenticated {else} loginRequired{/if}" data-trial={if $EXTENSION->get('trialdays') gt 0}true{else}false{/if}>{vtranslate('LBL_BUY',$QUALIFIED_MODULE)}${$EXTENSION->get('price')}</button>
-													{/if}   
+													{/if}
 												{/if}
 											{else}
 												{if $EXTENSION->get('price') eq 'Free' or $EXTENSION->get('price') eq 0}
 													<button class="oneclickInstallFree btn btn-success btn-sm {if $IS_AUTH}authenticated {else} loginRequired{/if}">{vtranslate('LBL_INSTALL', $QUALIFIED_MODULE)}</button>
 												{else}
-													<button class="oneclickInstallPaid btn btn-info btn-sm {if $IS_AUTH}authenticated {else} loginRequired{/if}" data-trial=false>{vtranslate('LBL_BUY',$QUALIFIED_MODULE)}${$EXTENSION->get('price')}</button>   
+													<button class="oneclickInstallPaid btn btn-info btn-sm {if $IS_AUTH}authenticated {else} loginRequired{/if}" data-trial=false>{vtranslate('LBL_BUY',$QUALIFIED_MODULE)}${$EXTENSION->get('price')}</button>
 												{/if}
 											{/if}
 										{else}
-											<span class="alert alert-error">{vtranslate('LBL_EXTENSION_NOT_COMPATABLE', $QUALIFIED_MODULE)}</span>
+											<span class="alert alert-error">{vtranslate('LBL_EXTENSION_NOT_COMPATIBLE', $QUALIFIED_MODULE)}</span>
 										{/if}
 									</div>
 								</div>

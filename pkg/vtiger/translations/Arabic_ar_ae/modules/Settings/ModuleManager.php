@@ -20,20 +20,20 @@ $languageStrings = array(
 	'LBL_ACCEPT_AND_INSTALL' => 'Accept and Install',
 	'LBL_ALREADY_EXISTS' => 'Already Exists',
 	'LBL_OK' => 'OK',
-	'LBL_EXTENSION_NOT_COMPATABLE' => 'Extension is not Vtiger Compatable',
+	'LBL_EXTENSION_NOT_COMPATIBLE' => 'Extension is not Vtiger Compatible',
 	'LBL_INVALID_FILE' => 'Invalid File',
 	'LBL_NO_LICENSE_PROVIDED' => 'No License Provided',
 	'LBL_INSTALLATION' => 'Installation',
 	'LBL_FAILED' => 'Failed',
 	'LBL_SUCCESSFULL' => 'Successfull',
 	'LBL_INSTALLATION_LOG' => 'Installation Log',
-    
+
          //Extension Store translations
         'LBL_VTIGER_EXTENSION_STORE' => 'vtiger إدارة الإرشاد المتجر',
         'LBL_SEARCH_FOR_EXTENSION'  => 'البحث عن التمديد',
         'LBL_DOWNLOADS' => 'التنزيلات',
         'LBL_NO_EXTENSIONS_FOUND' => 'لم يتم العثور ملحقات  ',
-        'LBL_REGISTER_USER' => 'تسجيل مستخدم',	
+        'LBL_REGISTER_USER' => 'تسجيل مستخدم',
         'LBL_SETUP_CARD_DETAILS' => 'تفاصيل بطاقة الإعداد',
         'LBL_SETUP_CARD' => 'بطاقة الإعداد',
         'LBL_CARD_NUMBER' => 'عدد بطاقة',
