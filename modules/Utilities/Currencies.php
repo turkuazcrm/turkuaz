@@ -58,7 +58,7 @@ $currencies = array(
 	'Iceland, Krona'=>array('ISK','kr'),
 	'India, Rupees'=>array('INR','₨'),
 	'Indonesia, Rupiahs'=>array('IDR','Rp'),
-	'Iran, Rials'=>array('IRR','﷼'),	
+	'Iran, Rials'=>array('IRR','﷼'),
 	'Isle of Man, Pounds'=>array('IMP','£'),
 	'Israel, New Shekels'=>array('ILS','₪'),
 	'Jamaica, Dollars'=>array('JMD','J$'),
@@ -93,7 +93,7 @@ $currencies = array(
 	'Nigeria, Nairas'=>array('NGN','₦'),
 	'North Korea, Won'=>array('KPW','₩'),
 	'Norway, Krone'=>array('NOK','kr'),
-	'Oman, Rials'=>array('OMR','﷼'),	
+	'Oman, Rials'=>array('OMR','﷼'),
 	'Pakistan, Rupees'=>array('PKR','₨'),
 	'Panama, Balboa'=>array('PAB','B/.'),
 	'Paraguay, Guarani'=>array('PYG','Gs'),
@@ -104,7 +104,7 @@ $currencies = array(
 	'Romania, New Lei'=>array('RON','lei'),
 	'Russia, Rubles'=>array('RUB','руб'),
 	'Saint Helena, Pounds'=>array('SHP','£'),
-	'Saudi Arabia, Riyals'=>array('SAR','﷼'),	
+	'Saudi Arabia, Riyals'=>array('SAR','﷼'),
 	'Serbia, Dinars'=>array('RSD','Дин.'),
 	'Seychelles, Rupees'=>array('SCR','₨'),
 	'Singapore, Dollars'=>array('SGD','$'),
@@ -120,8 +120,7 @@ $currencies = array(
 	'Taiwan, New Dollars'=>array('TWD','NT$'),
 	'Thailand, Baht'=>array('THB','฿'),
 	'Trinidad and Tobago, Dollars'=>array('TTD','TT$'),
-	'Turkey, New Lira'=>array('TRY','YTL'),
-	'Turkey, Liras'=>array('TRL','₤'),
+	'Turkey, Liras'=>array('TRY','₺'),
 	'Tuvalu, Dollars'=>array('TVD','$'),
 	'Ukraine, Hryvnia'=>array('UAH','₴'),
 	'United Arab Emirates, Dirham' => array('AED', 'AED'),
@@ -138,9 +137,8 @@ $currencies = array(
 	'Malawi, Kwacha' => array('MWK', 'MK'),
 	'Tunisian, Dinar' => array('TD', 'TD'),
 	'Moroccan, Dirham' => array('MAD', 'درهم'),
-	);	
+	);
 /*
-	'Afghanistan, Afghanis'=>array('SAR','﷼'),	
-	'Cambodia, Riels'=>array('SAR','﷼'),	
+	'Afghanistan, Afghanis'=>array('SAR','﷼'),
+	'Cambodia, Riels'=>array('SAR','﷼'),
 */
-?>
