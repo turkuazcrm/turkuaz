@@ -62,7 +62,6 @@ EOF
 
   config.vm.provision :docker do |container|
     container.run 'selenium-firefox', image: 'selenium/standalone-firefox:4.3.0', args: %w[
-      --publish 4444:4444
       --net host
     ].join(' ')
   end
