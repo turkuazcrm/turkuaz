@@ -24,7 +24,6 @@ class Install_Index_view extends Vtiger_View_Controller {
 		$this->exposeMethod('Step4');
 		$this->exposeMethod('Step5');
 		$this->exposeMethod('Step6');
-		$this->exposeMethod('Step7');
 	}
 
 	protected function applyInstallFriendlyEnv() {
@@ -111,7 +110,7 @@ class Install_Index_view extends Vtiger_View_Controller {
 		$viewer->assign('ADMIN_LASTNAME', $defaultParameters['admin_lastname']);
 		$viewer->assign('ADMIN_PASSWORD', $defaultParameters['admin_password']);
 		$viewer->assign('ADMIN_EMAIL', $defaultParameters['admin_email']);
-                
+
                 $runtime_configs = Vtiger_Runtime_Configs::getInstance();
                 $password_regex = $runtime_configs->getValidationRegex('password_regex');
                 $viewer->assign('PWD_REGEX', $password_regex);
@@ -167,15 +166,7 @@ class Install_Index_view extends Vtiger_View_Controller {
 	}
 
 	public function Step6(Vtiger_Request $request) {
-		$moduleName = $request->getModule();
-		$viewer = $this->getViewer($request);
-
-		$viewer->assign('AUTH_KEY', $_SESSION['config_file_info']['authentication_key']);
-		$viewer->view('Step6.tpl', $moduleName);
-	}
-
-	public function Step7(Vtiger_Request $request) {
-		$moduleName = $request->getModule();
+        $moduleName = $request->getModule();
 		$webuiInstance = new Vtiger_WebUI();
 		$isInstalled = $webuiInstance->isInstalled();
 		if(!$isInstalled){
@@ -204,8 +195,7 @@ class Install_Index_view extends Vtiger_View_Controller {
 			$viewer->assign('PASSWORD', $_SESSION['config_file_info']['password']);
 			$viewer->assign('APPUNIQUEKEY', $this->retrieveConfiguredAppUniqueKey());
 			$viewer->assign('CURRENT_VERSION', $_SESSION['vtiger_version']);
-			$viewer->assign('INDUSTRY', $request->get('industry'));
-			$viewer->view('Step7.tpl', $moduleName);
+			$viewer->view('Step6.tpl', $moduleName);
 		}else{
 			$response = new Vtiger_Response();
 			$response->setResult(vtranslate('THIS_INSTANCE_IS_ALREADY_INSTALLED', $moduleName));
@@ -241,7 +231,7 @@ class Install_Index_view extends Vtiger_View_Controller {
 		return $headerScriptInstances;
 	}
 
-	public function validateRequest(Vtiger_Request $request) { 
-		return $request->validateWriteAccess(true); 
+	public function validateRequest(Vtiger_Request $request) {
+		return $request->validateWriteAccess(true);
 	}
 }
