@@ -3,16 +3,13 @@ Vagrant.configure('2') do |config|
 
   # Linux and Windows host machines need to use different kind of
   # technology to provide best out of their power.  Linux machines
-  # should use NFS and Windows should use SMB.  VirtualBox provides
-  # simple synced_folder type, but also comes with speed penalty and
-  # known bugs.
+  # should use NFS.  VirtualBox provides simple synced_folder type, but
+  # also comes with speed penalty and known bugs.
   #
   synced_folder_options =
     if Vagrant::Util::Platform.linux?
       [type: 'nfs',
         nfs_version: 4, mount_options: %w[noatime nodiratime relatime]]
-    else
-      [type: 'smb']
     end
 
   # Default Vagrant installation comes with /vagrant synced_folder
@@ -48,8 +45,8 @@ Vagrant.configure('2') do |config|
        yarnpkg composer
     su vagrant -c 'yarnpkg global add prettier @prettier/plugin-php'
     mariadb -e "
-      CREATE DATABASE vtiger_development;
-      CREATE USER 'vtiger'@'localhost' IDENTIFIED BY 'vtiger';
+      CREATE DATABASE IF NOT EXISTS vtiger_development;
+      CREATE USER IF NOT EXISTS 'vtiger'@'localhost' IDENTIFIED BY 'vtiger';
       GRANT ALL PRIVILEGES ON vtiger_development.* TO 'vtiger'@'localhost';
       FLUSH PRIVILEGES;
     "
