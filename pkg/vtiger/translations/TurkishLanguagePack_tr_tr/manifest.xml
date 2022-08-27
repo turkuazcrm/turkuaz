@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <module>
 	<type>language</type>
-	<name>Turkce</name>
-	<label>Turkce Dil Paketi</label>
+	<name>Türkçe</name>
+	<label>Türkçe Dil Paketi</label>
 	<prefix>tr_tr</prefix>
 	<version>5.1.0</version>
 	<encoding>UTF-8</encoding>
