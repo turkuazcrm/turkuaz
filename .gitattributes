@@ -8,3 +8,11 @@ libraries/Oauth/*        -linguist-vendored
 migrate/resources/**      linguist-vendored
 test/migration/**         linguist-vendored
 vtlib/thirdparty/**       linguist-vendored
+
+.vscode/**                export-ignore
+pkg/**                    export-ignore
+tests/**                  export-ignore
+.prettierignore           export-ignore
+.prettierrc               export-ignore
+codeception.yml           export-ignore
+Vagrantfile               export-ignore
