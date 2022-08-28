@@ -1,0 +1,50 @@
+name: Codeception Tests
+
+on:
+  push:
+    branches-ignore:
+      - gh-pages
+
+jobs:
+  acceptance:
+    runs-on: ubuntu-18.04
+
+    services:
+      mariadb:
+        image: mariadb:10.3  # 10.3, 10.5, 10.6
+        env:
+          MARIADB_USER: turkuaz
+          MARIADB_PASSWORD: turkuaz
+          MARIADB_DATABASE: turkuaz_development
+        options: >-
+          --health-cmd="mysqladmin ping" --health-interval=10s
+          --health-timeout=10s --health-retries=3
+
+      selenium-firefox:
+        image: selenium/standalone-firefox:4.4
+        options: >-
+          --net host
+
+    strategy:
+      matrix:
+        php: [ "7.4" ]
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: >-
+            mbstring, dom, fileinfo, mysql, libxml, xml, xmlwriter, dom,
+            tokenizer, filter, json, phar, pcre, openssl, pdo, intl,
+            curl
+          ini-values: memory_limit=-1, date.timezone='UTC'
+          coverage: xdebug
+          tools: composer:v2
+
+      - name: Install dependencies
+        run: composer install --prefer-dist --no-progress --no-interaction --no-suggest
+
+      - name: Run Acceptance tests
+        run: php vendor/bin/codecept run
