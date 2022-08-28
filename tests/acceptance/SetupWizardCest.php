@@ -20,11 +20,11 @@ class SetupWizardCest
         $I->click('input[name=db_hostname]');
         $I->type('127.0.0.1');
         $I->click('input[name=db_username]');
-        $I->type('vtiger');
+        $I->type('turkuaz');
         $I->click('input[name=db_password]');
-        $I->type('vtiger');
+        $I->type('turkuaz');
         $I->click('input[name=db_name]');
-        $I->type('vtiger_development');
+        $I->type('turkuaz_development');
         $I->click('input[name=password]');
         $I->type('SecretPassw0rd');
         $I->click('input[name=retype_password]');
@@ -42,11 +42,6 @@ class SetupWizardCest
 
         $I->see('One last thing...');  // TODO: Pick an item from dropdown
         $I->click('Next');
-        // $I->see('');
-
-        // $I->wait(995);  // NOTE: It takes for ever (25 minutes)
-        // $I->wait(500);
-        $I->retry(6, 800);
-        $I->retrySee('Confirm Configuration Settings');
+        $I->see('Installation in progress');
     }
 }

@@ -45,9 +45,9 @@ Vagrant.configure('2') do |config|
        yarnpkg composer
     su vagrant -c 'yarnpkg global add prettier @prettier/plugin-php'
     mariadb -e "
-      CREATE DATABASE IF NOT EXISTS vtiger_development;
-      CREATE USER IF NOT EXISTS 'vtiger'@'localhost' IDENTIFIED BY 'vtiger';
-      GRANT ALL PRIVILEGES ON vtiger_development.* TO 'vtiger'@'localhost';
+      CREATE DATABASE IF NOT EXISTS turkuaz_development;
+      CREATE USER IF NOT EXISTS 'turkuaz'@'localhost' IDENTIFIED BY 'turkuaz';
+      GRANT ALL PRIVILEGES ON turkuaz_development.* TO 'turkuaz'@'localhost';
       FLUSH PRIVILEGES;
     "
     cat <<-'EOF' > /etc/mysql/mariadb.conf.d/100-sql-mode.cnf
@@ -58,8 +58,8 @@ EOF
   SHELL
 
   config.vm.provision :docker do |container|
-    container.run 'selenium-firefox', image: 'selenium/standalone-firefox:4.3.0', args: %w[
-      --net host
-    ].join(' ')
+    container.run 'selenium-firefox',
+      image: 'selenium/standalone-firefox:4.3.0',
+      args: %w[ --net host ].join(' ')
   end
 end
