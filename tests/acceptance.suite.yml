@@ -8,7 +8,7 @@ modules:
   enabled:
     - WebDriver:
         url: http://127.0.0.1/
-        host: selenium-firefox
+        host: localhost
         browser: firefox
     - \Helper\Acceptance
 

@@ -63,7 +63,7 @@ jobs:
         run: composer install --prefer-dist --no-progress --no-interaction --no-suggest
 
       - name: Check Selenium health status
-        run: curl -f http://selenium-firefox:4444/wd/hub/status
+        run: curl -f http://localhost:4444/wd/hub/status
 
       - name: Run Acceptance tests
         run: php vendor/bin/codecept run tests/acceptance/SetupWizardCest.php --steps
