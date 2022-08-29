@@ -44,8 +44,8 @@ jobs:
 
       - name: Symlink GitHub Workspace to Apache HTTP Server webroot
         run: |
-          rm -rf /var/www/html
-          ln -s $GITHUB_WORKSPACE /var/www/html
+          sudo rm -rf /var/www/html
+          sudo ln -s $GITHUB_WORKSPACE /var/www/html
 
       - name: Install dependencies
         run: composer install --prefer-dist --no-progress --no-interaction --no-suggest
