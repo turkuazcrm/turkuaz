@@ -43,8 +43,16 @@ jobs:
           coverage: xdebug
           tools: composer:v2
 
+      - name: Start Apache HTTP Server unit
+        run: systemctl start apache2.service
+
+      - name: Symlink GitHub Workspace to Apache HTTP Server webroot
+        run: |
+          rm -rf /var/www/html
+          ln -s $GITHUB_WORKSPACE /var/www/html
+
       - name: Install dependencies
         run: composer install --prefer-dist --no-progress --no-interaction --no-suggest
 
       - name: Run Acceptance tests
-        run: php vendor/bin/codecept run
+        run: php vendor/bin/codecept run tests/acceptance/SetupWizardCest.php --steps
