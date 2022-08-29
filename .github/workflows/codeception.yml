@@ -40,7 +40,7 @@ jobs:
           tools: composer:v2
 
       - name: Start Apache HTTP Server unit
-        run: systemctl start apache2.service
+        run: sudo systemctl start apache2.service
 
       - name: Symlink GitHub Workspace to Apache HTTP Server webroot
         run: |
