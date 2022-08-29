@@ -17,11 +17,21 @@ jobs:
           MARIADB_PASSWORD: turkuaz
           MARIADB_DATABASE: turkuaz_development
           MARIADB_RANDOM_ROOT_PASSWORD: "true"
+        ports:
+          - 3306:3306
 
       selenium-firefox:
         image: selenium/standalone-firefox:4.4
+        volumes:
+          - /dev/shm:/dev/shm
         ports:
           - 4444:4444
+        options: >-
+          --health-cmd "curl -f http://localhost:4444/wd/hub/status"
+          --health-interval 30s
+          --health-timeout 10s
+          --health-retries 5
+          --health-start-period 30s
 
     strategy:
       matrix:
@@ -51,6 +61,9 @@ jobs:
 
       - name: Install dependencies
         run: composer install --prefer-dist --no-progress --no-interaction --no-suggest
+
+      - name: Check Selenium health status
+        run: curl -f http://selenium-firefox:4444/wd/hub/status
 
       - name: Run Acceptance tests
         run: php vendor/bin/codecept run tests/acceptance/SetupWizardCest.php --steps
