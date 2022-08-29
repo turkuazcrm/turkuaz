@@ -20,6 +20,8 @@ jobs:
 
       selenium-firefox:
         image: selenium/standalone-firefox:4.4
+        ports:
+          - 4444:4444
 
     strategy:
       matrix:
