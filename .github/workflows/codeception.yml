@@ -20,8 +20,6 @@ jobs:
 
       selenium-firefox:
         image: selenium/standalone-firefox:4.4
-        options: >-
-          --net host
 
     strategy:
       matrix:
