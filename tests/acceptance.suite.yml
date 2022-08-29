@@ -8,10 +8,8 @@ modules:
   enabled:
     - WebDriver:
         url: http://127.0.0.1/
-        browser: chrome
-        capabilities:
-          chromeOptions:
-            args: [ "--headless", "--disable-gpu" ]
+        host: selenium-firefox
+        browser: firefox
     - \Helper\Acceptance
 
 step_decorators:
