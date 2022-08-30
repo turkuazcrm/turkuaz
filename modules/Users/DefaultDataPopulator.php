@@ -1453,7 +1453,7 @@ Should any need arise,please do give us a call.';
                                     <td align="center"> </td>
                                 </tr>
                                 <tr>
-                                    <td align="left" style="background-color: rgb(27, 77, 140); font-family: Arial,Helvetica,sans-serif; font-size: 24px; color: rgb(255, 255, 255); font-weight: bolder; line-height: 35px;">vtiger CRM<br /> </td>
+                                    <td align="left" style="background-color: rgb(27, 77, 140); font-family: Arial,Helvetica,sans-serif; font-size: 24px; color: rgb(255, 255, 255); font-weight: bolder; line-height: 35px;">Turkuaz CRM<br /> </td>
                                 </tr>
                                 <tr>
                                     <td align="right" style="padding-right: 100px;">The honest Open Source CRM </td>
@@ -1480,7 +1480,7 @@ Should any need arise,please do give us a call.';
                                                 <td style="font-family: Arial,Helvetica,sans-serif; font-size: 14px; color: rgb(22, 72, 134); font-weight: bolder; line-height: 15px;">Dear $contact_name$, </td>
                                             </tr>
                                             <tr>
-                                                <td style="font-family: Arial,Helvetica,sans-serif; font-size: 12px; color: rgb(0, 0, 0); font-weight: normal; text-align: justify; line-height: 20px;"> Thank you very much for subscribing to the vtiger CRM - annual support service.<br />Here is your self service portal login details:</td>
+                                                <td style="font-family: Arial,Helvetica,sans-serif; font-size: 12px; color: rgb(0, 0, 0); font-weight: normal; text-align: justify; line-height: 20px;"> Thank you very much for subscribing to the Turkuaz CRM - annual support service.<br />Here is your self service portal login details:</td>
                                             </tr>
                                             <tr>
                                                 <td align="center">
@@ -1498,7 +1498,7 @@ Should any need arise,please do give us a call.';
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td style="font-family: Arial,Helvetica,sans-serif; font-size: 12px; color: rgb(0, 0, 0); font-weight: normal; text-align: justify; line-height: 20px;"><strong>NOTE:</strong> We suggest you to change your password after logging in first time. <br /><br /> <strong><u>Help Documentation</u></strong><br />  <br /> After logging in to vtiger Self-service Portal first time, you can access the vtiger CRM documents from the <strong>Documents</strong> tab. Following documents are available for your reference:<br />
+                                                <td style="font-family: Arial,Helvetica,sans-serif; font-size: 12px; color: rgb(0, 0, 0); font-weight: normal; text-align: justify; line-height: 20px;"><strong>NOTE:</strong> We suggest you to change your password after logging in first time. <br /><br /> <strong><u>Help Documentation</u></strong><br />  <br /> After logging in to vtiger Self-service Portal first time, you can access the Turkuaz CRM documents from the <strong>Documents</strong> tab. Following documents are available for your reference:<br />
                                                 <ul>
                                                     <li>Installation Manual (Windows &amp; Linux OS)<br /> </li>
                                                     <li>User &amp; Administrator Manual<br /> </li>
@@ -1509,7 +1509,7 @@ Should any need arise,please do give us a call.';
                                                     <li>vtiger Web Forms - User Manual<br /> </li>
                                                     <li>vtiger Firefox Tool bar - User Manual<br /> </li>
                                                 </ul>
-                                                <br />  <br /> <strong><u>Knowledge Base</u></strong><br /> <br /> Periodically we update frequently asked question based on our customer experiences. You can access the latest articles from the <strong>FAQ</strong> tab.<br /> <br /> <strong><u>vtiger CRM - Details</u></strong><br /> <br /> Kindly let us know your current vtiger CRM version and system specification so that we can provide you necessary guidelines to enhance your vtiger CRM system performance. Based on your system specification we alert you about the latest security &amp; upgrade patches.<br />  <br />			 Thank you once again and wish you a wonderful experience with vtiger CRM.<br /> </td>
+                                                <br />  <br /> <strong><u>Knowledge Base</u></strong><br /> <br /> Periodically we update frequently asked question based on our customer experiences. You can access the latest articles from the <strong>FAQ</strong> tab.<br /> <br /> <strong><u>Turkuaz CRM - Details</u></strong><br /> <br /> Kindly let us know your current Turkuaz CRM version and system specification so that we can provide you necessary guidelines to enhance your Turkuaz CRM system performance. Based on your system specification we alert you about the latest security &amp; upgrade patches.<br />  <br />			 Thank you once again and wish you a wonderful experience with Turkuaz CRM.<br /> </td>
                                             </tr>
                                             <tr>
                                                 <td align="right"><strong style="padding: 2px; font-family: Arial,Helvetica,sans-serif; font-size: 12px; color: rgb(0, 0, 0); font-weight: bold;"><br /><br />Best Regards</strong></td>
@@ -1598,7 +1598,7 @@ Should any need arise,please do give us a call.';
                                     <td align="center"> </td>
                                 </tr>
                                 <tr>
-                                    <td align="left" style="background-color: rgb(27, 77, 140); font-family: Arial,Helvetica,sans-serif; font-size: 24px; color: rgb(255, 255, 255); font-weight: bolder; line-height: 35px;">vtiger CRM </td>
+                                    <td align="left" style="background-color: rgb(27, 77, 140); font-family: Arial,Helvetica,sans-serif; font-size: 24px; color: rgb(255, 255, 255); font-weight: bolder; line-height: 35px;">Turkuaz CRM </td>
                                 </tr>
                                 <tr>
                                     <td align="right" style="padding-right: 100px;">The honest Open Source CRM </td>
@@ -1716,7 +1716,7 @@ Should any need arise,please do give us a call.';
                                     <td align="center"> </td>
                                 </tr>
                                 <tr>
-                                    <td align="left" style="background-color: rgb(27, 77, 140); font-family: Arial,Helvetica,sans-serif; font-size: 24px; color: rgb(255, 255, 255); font-weight: bolder; line-height: 35px;">vtiger CRM </td>
+                                    <td align="left" style="background-color: rgb(27, 77, 140); font-family: Arial,Helvetica,sans-serif; font-size: 24px; color: rgb(255, 255, 255); font-weight: bolder; line-height: 35px;">Turkuaz CRM </td>
                                 </tr>
                                 <tr>
                                     <td align="right" style="padding-right: 100px;">The honest Open Source CRM </td>

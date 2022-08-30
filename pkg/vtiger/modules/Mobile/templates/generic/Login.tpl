@@ -5,7 +5,7 @@
 <table width=100% cellpadding=0 cellspacing=0 border=0>
 <tr>
 	<td>
-		<h1 class='page_title'>vtiger CRM</h1>
+		<h1 class='page_title'>Turkuaz CRM</h1>
 	</td>
 </tr>
 

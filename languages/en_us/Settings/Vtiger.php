@@ -58,7 +58,7 @@ $languageStrings = array(
 	'LBL_FIELDFORMULAS_DESCRIPTION' => 'Add custom equations to custom fields',
 
 	'VTLIB_LBL_MODULE_MANAGER' => 'Modules',
-	'VTLIB_LBL_MODULE_MANAGER_DESCRIPTION' => 'Manage module behavior inside vtiger CRM',
+	'VTLIB_LBL_MODULE_MANAGER_DESCRIPTION' => 'Manage module behavior inside Turkuaz CRM',
 	'LBL_PICKLIST_EDITOR' => 'Picklist Field Values',
 	'LBL_PICKLIST_DESCRIPTION' => 'Customize Picklist values in each module',
 	'LBL_PICKLIST_DEPENDENCY_SETUP' => 'Picklist Dependencies',
@@ -235,7 +235,7 @@ $languageStrings = array(
 	
 	//Configuration Editor
 	'LBL_CONFIG_EDITOR' => 'Configuration Editor',
-	'LBL_CONFIG_DESCRIPTION' => 'Edit the Configuration details of vtiger CRM',
+	'LBL_CONFIG_DESCRIPTION' => 'Edit the Configuration details of Turkuaz CRM',
 	'LBL_CONFIG_FILE' => 'config.inc.php',
 	'LBL_MB' => 'MB',
 

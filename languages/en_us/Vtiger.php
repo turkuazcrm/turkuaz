@@ -10,8 +10,8 @@
 $languageStrings = array(
 
 	// Footer
-	'APPTITLE' => 'Vtiger CRM',
-	'POWEREDBY'=> 'Powered by vtiger CRM',
+	'APPTITLE' => 'Turkuaz CRM',
+	'POWEREDBY'=> 'Turkuaz CRM',
 	'LBL_READ_LICENSE' => 'Read License',
 	'LBL_PRIVACY_POLICY' => 'Privacy Policy',
 
@@ -730,7 +730,7 @@ $languageStrings = array(
 	'LBL_BLANK' => '-Blank-',
 
 	//PageTitle translations
-	'LBL_VTIGER_CRM_HONEST_OPEN_SOURCE' => 'vtiger CRM On Demand',
+	'LBL_VTIGER_CRM_HONEST_OPEN_SOURCE' => 'Turkuaz CRM On Demand',
 
 	//Translations used in inventory modules for sopy address
 	'SINGLE_Accounts' => 'Organization',

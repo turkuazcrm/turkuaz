@@ -17,7 +17,7 @@ jQuery.Class('Install_Index_Js', {}, {
 		jQuery('input[name="step4"]').on('click', function (e) {
 			var elements = jQuery('.no')
 			if (elements.length > 0) {
-				var msg = "Some of the PHP Settings do not meet the recommended values. This might affect some of the features of vtiger CRM. Are you sure, you want to proceed?";
+				var msg = "Some of the PHP Settings do not meet the recommended values. This might affect some of the features of Turkuaz CRM. Are you sure, you want to proceed?";
 				if (confirm(msg)) {
 					jQuery('form[name="step3"]').submit();
 					return true;

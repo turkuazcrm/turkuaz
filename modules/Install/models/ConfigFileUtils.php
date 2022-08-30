@@ -247,7 +247,7 @@ ini_set('memory_limit','64M');
 //Option to hide empty home blocks if no entries.
 \$display_empty_home_blocks = false;
 
-//Disable Stat Tracking of vtiger CRM instance
+//Disable Stat Tracking of Turkuaz CRM instance
 \$disable_stats_tracking = false;
 
 // Generating Unique Application Key
