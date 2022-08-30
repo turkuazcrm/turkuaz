@@ -8,8 +8,8 @@
  * All Rights Reserved.
  ************************************************************************************/
 $languageStrings = array(
-	'APPTITLE'                     => 'Vtiger CRM'                  , 
-	'POWEREDBY'                    => 'Powered by vtiger CRM'       , 
+	'APPTITLE'                     => 'Turkuaz CRM'                  ,
+	'POWEREDBY'                    => 'Turkuaz CRM'       ,
 	'LBL_READ_LICENSE'             => 'Lisansı Oku'                , 
 	'LBL_PRIVACY_POLICY'           => 'Gizlilik Politikası'        , 
 	'LBL_SELECT_ALL'               => 'Hepsini Seç'                , 
@@ -540,7 +540,7 @@ $languageStrings = array(
 	'Sales End Date'               => 'Sales End Date'              , 
 	'Open Ticktes'                 => 'Open Tickets'                , // TODO: Review
 	'LBL_SELECT_STATUS'            => 'Seçiniz Durumu'              ,
-	'LBL_VTIGER_CRM_HONEST_OPEN_SOURCE' => 'vtiger CRM On Demand'        , 
+	'LBL_VTIGER_CRM_HONEST_OPEN_SOURCE' => 'Turkuaz CRM On Demand'        ,
 	'SINGLE_Accounts'              => 'Organization'                , // TODO: Review
 	'SINGLE_Contacts'              => 'Contact'                     , // TODO: Review
 	'LBL_Sun'                      => 'Sun'                         , // TODO: Review
