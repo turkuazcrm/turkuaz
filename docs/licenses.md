@@ -8,6 +8,12 @@ files, and share them in a documentation like this.  Also, some
 dependencies that present in Vtiger may not present in this project
 because of either security, performance, usability or license problems.
 
+## About This Project
+
+Turkuaz CRM uses [GNU AGPL, Version 3.0].  All source codes that are not
+originated from the original authors will automatically licensed in
+AGPL.
+
 ## Third Party Libraries
 
 This project uses multiple of third party libraries and/or projects as
@@ -102,3 +108,4 @@ license that they created as SPL 1.1.2.
 [PHP License 3.0]: https://opensource.org/licenses/PHP-3.0
 [GNU LGPL, Version 3.0]: https://opensource.org/licenses/lgpl-license
 [GNU GPL, Version 2.0]: https://opensource.org/licenses/gpl-license
+[GNU AGPL, Version 3.0]: https://opensource.org/licenses/AGPL-3.0
