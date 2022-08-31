@@ -8,22 +8,22 @@
  * All Rights Reserved.
  ************************************************************************************/
 $languageStrings = array(
-    'Recycle Bin'                   => 'Recycle Bin'                 , // TODO: Review
-	'RecycleBin'                   => 'Recycle Bin'                 , // TODO: Review
-	'LBL_SELECT_MODULE'            => 'Select Module'               , // TODO: Review
-	'LBL_EMPTY_RECYCLEBIN'         => 'Empty Recycle Bin'           , // TODO: Review
-	'LBL_RESTORE'                  => 'Restore'                     , // TODO: Review
-	'LBL_NO_PERMITTED_MODULES'     => 'No permitted modules available', // TODO: Review
-	'LBL_RECORDS_LIST'             => 'Recycle Bin List'            , // TODO: Review
-	'LBL_NO_RECORDS_FOUND'         => 'No records found to Restore in module', // TODO: Review
+    'Recycle Bin'                   => 'Çöp Kutusu',
+    'RecycleBin'                    => 'Çöp Kutusu',
+    'LBL_SELECT_MODULE'             => 'Modül Seçin',
+    'LBL_EMPTY_RECYCLEBIN'          => 'Çöp Kutusunu Boşalt',
+    'LBL_RESTORE'                   => 'Restore Et',
+    'LBL_NO_PERMITTED_MODULES'      => 'İzin verilen modül bulunmamakta',
+    'LBL_RECORDS_LIST'              => 'Çöp Kutusu Listesi',
+    'LBL_NO_RECORDS_FOUND'          => 'Restore edilecek bir öge bulunamadı',
 );
 $jsLanguageStrings = array(
-	'JS_MSG_EMPTY_RB_CONFIRMATION' => 'Are you sure you want to permanently remove all the deleted records from your database?', // TODO: Review
-	'JS_LBL_RESTORE_RECORDS_CONFIRMATION' => 'Are you sure you want to restore the records?', // TODO: Review
-    'JS_LBL_RESTORE_RECORD_CONFIRMATION' => 'Eğer kaydını geri yüklemek istediğinizden emin misiniz?',
-    'JS_RESTORING_RECORD' => 'Kaydını geri yükleme',
-    'JS_RESTORE_AND_UNTRASH_FILE_IN_DRIVE' => 'VTiger ve Sürücü Geri Yükleme',
+    'JS_MSG_EMPTY_RB_CONFIRMATION'         => 'Silinmiş kayıtları kalıcı olarak kaldırmak istediğinizden emin misiniz?',
+    'JS_LBL_RESTORE_RECORDS_CONFIRMATION'  => 'Bu kayıtları restore etmek istediğinizden emin misiniz?',
+    'JS_LBL_RESTORE_RECORD_CONFIRMATION'   => 'Bu kaydı restore etmek istediğinizden emin misiniz?',
+    'JS_RESTORING_RECORD'                  => 'Kayıt restore ediliyor',
+    'JS_RESTORE_AND_UNTRASH_FILE_IN_DRIVE' => 'Turkuaz ve Drive üzerinden Restore Et',
 
-  'JS_RESTORING_RECORDS' => 'Geri yükleme kayıtları',
+    'JS_RESTORING_RECORDS'                 => 'Kayıtlar restore ediliyor',
 
 );
