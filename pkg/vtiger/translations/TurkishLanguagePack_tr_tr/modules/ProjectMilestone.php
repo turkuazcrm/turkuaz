@@ -8,20 +8,20 @@
  * All Rights Reserved.
  ************************************************************************************/
 $languageStrings = array(
-	'SINGLE_ProjectMilestone'	=>	"Proje Milestone",
-	'LBL_ADD_RECORD'	=>	"Proje Milestone ekle",
-	'LBL_RECORDS_LIST'	=>	"Proje Aşamaları Listesi",
-	'LBL_PROJECTS_LIST'	=>	"Projeler Listesi",
-	'LBL_TASKS_LIST'	=>	"Görevler Listesi",
-	'LBL_MILESTONES_LIST'	=>	"Kilometre Taşları Listesi",
-	'LBL_PROJECT_MILESTONE_INFORMATION'	=>	"Proje Milestone Detayları",
-	'Project Milestone Name'	=>	"Proje Milestone Adı",
-	'Milestone Date'	=>	"Milestone Tarihi",
-	'Project Milestone No'	=>	"Proje Milestone sayısı",
-        'Type'                         => 'Tip'                         , 
-    'Related to'  => 'İlgili'     ,
-	//picklist values
-	'administrative' => 'Idari',
-    'operative' => 'Faal',
-    'other' => 'Diğer',
+    'SINGLE_ProjectMilestone'            =>    "Proje Aşaması",
+    'LBL_ADD_RECORD'                    =>    "Aşama ekle",
+    'LBL_RECORDS_LIST'                    =>    "Proje Aşamaları Listesi",
+    'LBL_PROJECTS_LIST'                    =>    "Projeler Listesi",
+    'LBL_TASKS_LIST'                    =>    "Görevler Listesi",
+    'LBL_MILESTONES_LIST'                =>    "Aşamalar Listesi",
+    'LBL_PROJECT_MILESTONE_INFORMATION'    =>    "Proje Aşaması Detayları",
+    'Project Milestone Name'            =>    "Proje Aşaması Adı",
+    'Milestone Date'                    =>    "Aşama Tarihi",
+    'Project Milestone No'                =>    "Proje Aşama sayısı",
+    'Type'                              =>  'Tip',
+    'Related to'                        =>  'Benzer',
+    //picklist values
+    'administrative' => 'İdari',
+    'operative'      => 'Etkin',
+    'other'          => 'Diğer',
 );

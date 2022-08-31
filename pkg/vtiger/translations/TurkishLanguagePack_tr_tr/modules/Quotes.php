@@ -8,23 +8,23 @@
  * All Rights Reserved.
  ************************************************************************************/
 $languageStrings = array(
-    'Quotes'                       => 'Teklif'                      , 
-	'SINGLE_Quotes'                => 'Teklif'                      , 
-	'LBL_EXPORT_TO_PDF'            => 'PDF Olarak Aktar'            , 
-	'LBL_SEND_MAIL_PDF'            => 'Send Email with PDF'         , // TODO: Review
-	'LBL_ADD_RECORD'               => 'Add Quote'                   , 
-	'LBL_RECORDS_LIST'             => 'Teklfiler Listesi'           , 
-	'LBL_QUOTE_INFORMATION'        => 'Teklif Bilgisi'              , 
-	'Quote No'                     => 'Teklif No'                   , 
-	'Quote Stage'                  => 'Teklif Aşaması'            , 
-	'Valid Till'                   => 'Geçerlilik Tarihi'          , 
-	'Inventory Manager'            => 'Stok Yöneticisi'            , 
-	'Accepted'                     => 'Kabul Edildi'                , 
-	'Rejected'                     => 'İptal'                      , 
-    'Related To'                   => 'İlgili'                      ,
+    'Quotes'                       => 'Teklif',
+    'SINGLE_Quotes'                => 'Teklif',
+    'LBL_EXPORT_TO_PDF'            => 'PDF Olarak Dışa Aktar',
+    'LBL_SEND_MAIL_PDF'            => 'PDF Olarak Mail Gönder',
+    'LBL_ADD_RECORD'               => 'Teklif Ekle',
+    'LBL_RECORDS_LIST'             => 'Teklif Listesi',
+    'LBL_QUOTE_INFORMATION'        => 'Teklif Bilgisi',
+    'Quote No'                     => 'Teklif No',
+    'Quote Stage'                  => 'Teklif Aşaması',
+    'Valid Till'                   => 'Geçerlilik Tarihi',
+    'Inventory Manager'            => 'Stok Yöneticisi',
+    'Accepted'                     => 'Kabul Edildi',
+    'Rejected'                     => 'Reddedildi',
+    'Related To'                   => 'Benzer',
 
-  'LBL_THIS' => 'Bu',
-  'LBL_IS_DELETED_FROM_THE_SYSTEM_PLEASE_REMOVE_OR_REPLACE_THIS_ITEM' => 'sistem silinmiş.veya bu öğeyi kaldırmak yerine lütfen ',
-  'LBL_THIS_LINE_ITEM_IS_DELETED_FROM_THE_SYSTEM_PLEASE_REMOVE_THIS_LINE_ITEM' => 'Bu satır öğesi sistemi,lütfen bu satırı Kaldır öğeler silinir ',
+    'LBL_THIS'                                                                   => 'Bu',
+    'LBL_IS_DELETED_FROM_THE_SYSTEM_PLEASE_REMOVE_OR_REPLACE_THIS_ITEM'          => 'sistemden silinmiş. Lütfen bu ögeyi kaldırın.',
+    'LBL_THIS_LINE_ITEM_IS_DELETED_FROM_THE_SYSTEM_PLEASE_REMOVE_THIS_LINE_ITEM' => 'Bu satır öğesi sistemden silinmiş, lütfen bu satırı kaldırınız.',
 
 );
