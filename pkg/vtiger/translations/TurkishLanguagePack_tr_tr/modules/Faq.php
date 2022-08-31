@@ -7,20 +7,22 @@
  * Portions created by vtiger are Copyright (C) vtiger.
  * All Rights Reserved.
  ************************************************************************************/
-$languageStrings = array(
-	'Faq'                          => 'SSS'                         ,
-	'SINGLE_Faq'                   => 'SSS'                         ,
-	'LBL_RECORDS_LIST'             => 'SSS Listesi'                   ,
-	'LBL_ADD_RECORD'               => 'SSS Ekle'                     ,
-	'LBL_FAQ_INFORMATION'          => 'SSS Bilgisi'  ,
-	'LBL_COMMENT_INFORMATION'      => 'Yorum Bilgisi'               ,
-	'Question'                     => 'Soru'                        ,
-	'Answer'                       => 'Cevap'                       ,
-	'Comments'                     => 'Yorumlar'                    ,
-	'Faq No'                       => 'SSS No'                      ,
-	'General'                      => 'Genel'                       ,
-	'Draft'                        => 'Taslak'                      ,
-	'Published'                    => 'Yayınlandı'                   ,
-	'Obsolete'                     => 'Eski'                        ,
-	'LBL_SOLUTION'                 => 'Çözüm'                    ,
-);
+$languageStrings = [
+    'Faq'                     => 'SSS',
+    'SINGLE_Faq'              => 'SSS',
+
+    'Answer'                  => 'Cevap',
+    'Comments'                => 'Yorumlar',
+    'Draft'                   => 'Taslak',
+    'Faq No'                  => 'SSS No',
+    'General'                 => 'Genel',
+    'Obsolete'                => 'Eski',
+    'Published'               => 'Yayınlandı',
+    'Question'                => 'Soru',
+
+    'LBL_ADD_RECORD'          => 'SSS Ekle',
+    'LBL_COMMENT_INFORMATION' => 'Yorum Bilgisi',
+    'LBL_FAQ_INFORMATION'     => 'SSS Bilgisi',
+    'LBL_RECORDS_LIST'        => 'SSS Listesi',
+    'LBL_SOLUTION'            => 'Çözüm',
+];
