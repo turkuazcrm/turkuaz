@@ -8,16 +8,16 @@
  * All Rights Reserved.
  ************************************************************************************/
 $languageStrings = array(
-	'LBL_SEND_SMS_TO_SELECTED_NUMBERS' => 'Send SMS to the selected numbers',
-	'LBL_STEP_1'                   => 'Step 1'                      ,
-	'LBL_STEP_2'                   => 'Step 2'                      ,
-	'LBL_SELECT_THE_PHONE_NUMBER_FIELDS_TO_SEND' => 'Select the phone number fields to send',
-	'LBL_TYPE_THE_MESSAGE'         => 'Type the message'            ,
-	'LBL_WRITE_YOUR_MESSAGE_HERE'  => 'write your message here'     ,
-	'LBL_ADD_MORE_FIELDS'          => 'Add more fields'             ,
-	'LBL_SERVER_CONFIG'           => 'Server Configuration'        ,
-	'LBL_CHECK_STATUS'             => 'Check Status'                ,
-	'message'                      => 'Message'                     ,
-	'LBL_SMSNOTIFIER_INFORMATION'  => 'SMS Information'             ,
-	'SINGLE_SMSNotifier'           => 'SMS Notifier'                , // TODO: Review
+    'LBL_SEND_SMS_TO_SELECTED_NUMBERS' => 'Seçili üyelere SMS gönder',
+    'LBL_STEP_1'                   => 'Adım 1',
+    'LBL_STEP_2'                   => 'Adım 2',
+    'LBL_SELECT_THE_PHONE_NUMBER_FIELDS_TO_SEND' => 'Göndermek için telefon numarası alan(lar)ını seçiniz',
+    'LBL_TYPE_THE_MESSAGE'         => 'Mesajınızı yazın',
+    'LBL_WRITE_YOUR_MESSAGE_HERE'  => 'Mesajınızı buraya yazın',
+    'LBL_ADD_MORE_FIELDS'          => 'Alan Ekle',
+    'LBL_SERVER_CONFIG'           => 'Sunucu Konfigürasyonu',
+    'LBL_CHECK_STATUS'             => 'Durumu Kontrol Et',
+    'message'                      => 'Mesaj',
+    'LBL_SMSNOTIFIER_INFORMATION'  => 'SMS Bilgisi',
+    'SINGLE_SMSNotifier'           => 'SMS Hatırlatıcı', // TODO: Review
 );
