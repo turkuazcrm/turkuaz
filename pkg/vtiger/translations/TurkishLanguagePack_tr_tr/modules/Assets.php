@@ -7,25 +7,26 @@
  * Portions created by vtiger are Copyright (C) vtiger.
  * All Rights Reserved.
  ************************************************************************************/
-$languageStrings = array(
-	'SINGLE_Assets'                => 'Varlık'                 ,
-	'LBL_ADD_RECORD'               => 'Varlık Ekle'            ,
-	'LBL_RECORDS_LIST'             => 'Varlık Listesi'         ,
-	'LBL_ASSET_INFORMATION'        => 'Varlık Detayları'       ,
-	'Asset No'                     => 'Varlık No'              ,
-	'Serial Number'                => 'Seri Numarası'          ,
-	'Date Sold'                    => 'Satıldığı Tarih'        ,
-	'Date in Service'              => 'Servisteki Tarih'       ,
-	'Tag Number'                   => 'Etiket Numarası'        ,
-	'Invoice Name'                 => 'Fatura İsmi'            ,
-	'Shipping Method'              => 'Nakliye Şekli'          ,
-	'Shipping Tracking Number'     => 'Nakliye Takip Numarası' ,
-	'Asset Name'                   => 'Varlık Adı'             ,
-	'Customer Name'                => 'Müşteri Adı'            ,
-	'Notes'                        => 'Notlar'                 ,
+$languageStrings = [
+    'Assets'                   => 'Varlıklarım',
+    'SINGLE_Assets'            => 'Varlık',
 
-    'In Service'                   => 'Hizmette'               ,
-	'Out-of-service'               => 'Hizmet Dışı'            ,
+    'Asset Name'               => 'Varlık Adı',
+    'Asset No'                 => 'Varlık No',
+    'Customer Name'            => 'Müşteri Adı',
+    'Date in Service'          => 'Serviste ki Tarih',
+    'Date Sold'                => 'Satıldığı Tarih',
+    'Invoice Name'             => 'Fatura İsmi',
+    'Notes'                    => 'Notlar',
+    'Serial Number'            => 'Seri Numarası',
+    'Shipping Method'          => 'Nakliye Şekli',
+    'Shipping Tracking Number' => 'Nakliye Takip Numarası',
+    'Tag Number'               => 'Etiket Numarası',
 
-    'Assets'                       => 'Varlıklarım'            ,
-);
+    'In Service'               => 'Hizmette',
+    'Out-of-service'           => 'Hizmet Dışı',
+
+    'LBL_ADD_RECORD'           => 'Varlık Ekle',
+    'LBL_ASSET_INFORMATION'    => 'Varlık Detayları',
+    'LBL_RECORDS_LIST'         => 'Varlık Listesi',
+];
