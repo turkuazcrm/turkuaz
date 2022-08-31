@@ -17,13 +17,13 @@ $languageStrings = [
     'Employees'                  => 'Çalışan Sayısı'                           ,
     'industry'                   => 'Sektör'                                   ,
     'Member Of'                  => 'Bağlı Olduğu Ana Müşteri'                 ,
-    'Organization Image'         => 'Organizasyon Görüntü'                     ,
+    'Organization Image'         => 'Müşteri Görüntüsü'                        ,
     'Other Email'                => 'İkincil E-Posta Adresi'                   ,
     'Other Phone'                => 'İkincil Telefon'                          ,
     'Ownership'                  => 'Aidiyeti'                                 , // TODO: Translation doesn't help
     'Phone'                      => 'Birincil Telefon'                         ,
     'SIC Code'                   => 'SIC Kodu'                                 ,
-    'Ticker Symbol'              => 'Stok Sembolü'                             ,
+    'Ticker Symbol'              => 'Borsa Sembolü'                            ,
     'Type'                       => 'Tip'                                      , // TODO: Translation doesn't help
     'Website'                    => 'Web Sayfası'                              ,
 
@@ -51,9 +51,19 @@ $languageStrings = [
 ];
 
 $jsLanguageStrings = [
-    'JS_DUPLICATE_CREATION_CONFIRMATION'     => 'Müşteri zaten var. Yinelenen bir kayıt oluşturmak istiyor musunuz?',
-
-    'LBL_DELETE_CONFIRMATION'                => 'Deleting this Organization will remove its related Opportunities & Quotes. Are you sure you want to delete this Organization?',
-    'LBL_MASS_DELETE_CONFIRMATION'           => 'Deleting this Organization will remove its related Opportunities & Quotes. Are you sure you want to delete this Organization?',
-    'LBL_RELATED_RECORD_DELETE_CONFIRMATION' => 'Müşteri kaydını silmek istediğinizden emin misiniz?',
+    'JS_DUPLICATE_CREATION_CONFIRMATION'     => 'Müşteri zaten var. Bu
+                                                 müşteriyi yeniden eklemek
+                                                 istiyor musunuz?'             ,
+    'LBL_DELETE_CONFIRMATION'                => 'Bu müşteriyi silmek bu müşteri
+                                                 ile ilgili fırsatları ve
+                                                 teklifleri de silecek. Bu
+                                                 müşteriyi silmek istediğinizden
+                                                 emin misiniz?'                ,
+    'LBL_MASS_DELETE_CONFIRMATION'           => 'Bu müşteriyi silmek bu müşteri
+                                                 ile ilgili fırsatları ve
+                                                 teklifleri de silecek. Bu
+                                                 müşteriyi silmek
+                                                 istediğinizden emin misiniz?' ,
+    'LBL_RELATED_RECORD_DELETE_CONFIRMATION' => 'Müşteri kaydını silmek
+                                                 istediğinizden emin misiniz?' ,
 ];

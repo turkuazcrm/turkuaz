@@ -8,27 +8,27 @@
  * All Rights Reserved.
  ************************************************************************************/
 $languageStrings = array(
-	'ALVT'                         => 'Önemli Müşteriler'        , 
-	'PLVT'                         => 'Önemli Fırsatlar'          , 
-	'QLTQ'                         => 'Önemli Teklifler'           , 
-	'CVLVT'                        => 'Kilit Ölçümler'           , 
-	'HLT'                          => 'Top Support Tickets'         , 
-	'GRT'                          => 'Grup Dağıtımım'          , 
-	'OLTSO'                        => 'Önemli Satış Siparişleri', 
-	'ILTI'                         => 'Önemli Faturalar'           , 
-	'HDB'                          => 'Ana Sayfa Grafikleri'        , 
-	'OLTPO'                        => 'Önemli Satınalma Siparişleri', 
-	'LTFAQ'                        => 'Yakın SSS'                  , 
-	'UA'                           => 'Gelecek İşler'             , 
-	'PA'                           => 'Bekleyen İşler'            , 
-        'Home'                         => 'Dashboard'                 ,
+	'ALVT'                         => 'Önemli Müşteriler'        ,
+	'PLVT'                         => 'Önemli Fırsatlar'          ,
+	'QLTQ'                         => 'Önemli Teklifler'           ,
+	'CVLVT'                        => 'Anahtar Metrikler'           ,
+	'HLT'                          => 'Önemli Biletler'         ,
+	'GRT'                          => 'Grup Dağıtımım'          ,
+	'OLTSO'                        => 'Önemli Satış Siparişleri',
+	'ILTI'                         => 'Önemli Faturalar'           ,
+	'HDB'                          => 'Ana Sayfa Gösterge Paneli'        ,
+	'OLTPO'                        => 'Önemli Satınalma Siparişleri',
+	'LTFAQ'                        => 'Güncel SSS'                  ,
+	'UA'                           => 'Gelecek Aktiviteler'             ,
+	'PA'                           => 'Bekleyen Aktiviteler'            ,
+        'Home'                         => 'Gösterge Paneli'                 ,
 
-  'LBL_SAVE_ORDER' => 'Kaydet Emri',
-  'LBL_ADD_NEW_DASHBOARD' => 'Yeni bir pano Ekle ',
-	'LBL_MAX_CHARACTERS_ALLOWED_DASHBOARD' => 'Maksimum 30 karakter pano adı için izin verilir.',
+  'LBL_SAVE_ORDER' => 'Siparişi Kaydet',
+  'LBL_ADD_NEW_DASHBOARD' => 'Yeni Bir Panel Ekle',
+	'LBL_MAX_CHARACTERS_ALLOWED_DASHBOARD' => 'Panel adı için maksimum 30 karaktere izin verilir.',
 );
 
 $jsLanguageStrings = array(
-	'JS_TAB_NAME_SHOULD_NOT_BE_EMPTY' => 'Pano adı boş olamaz olamaz',
-	'JS_NO_DATA_AVAILABLE' => 'veri yok',
+	'JS_TAB_NAME_SHOULD_NOT_BE_EMPTY' => 'Panel adı boş olamaz.',
+	'JS_NO_DATA_AVAILABLE' => 'Veri yok',
 );
