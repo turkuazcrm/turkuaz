@@ -44,6 +44,9 @@ Vagrant.configure('2') do |config|
        unzip mariadb-server docker.io \
        yarnpkg composer
     su vagrant -c 'yarnpkg global add prettier @prettier/plugin-php'
+    su vagrant -c 'composer global require friendsofphp/php-cs-fixer'
+    su vagrant -c 'composer global require "squizlabs/php_codesniffer=*"'
+    echo 'export PATH="$PATH:$HOME/.config/composer/vendor/bin"' >> /home/vagrant/.bashrc
     mariadb -e "
       CREATE DATABASE IF NOT EXISTS turkuaz_development;
       CREATE USER IF NOT EXISTS 'turkuaz'@'localhost' IDENTIFIED BY 'turkuaz';
@@ -56,10 +59,4 @@ sql_mode = ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
 EOF
     systemctl restart mariadb.service
   SHELL
-
-  config.vm.provision :docker do |container|
-    container.run 'selenium-firefox', image: 'selenium/standalone-firefox:4.3.0', args: %w[
-      --net host
-    ].join(' ')
-  end
 end
