@@ -142,8 +142,6 @@
 														&nbsp;&nbsp;&nbsp;<a>Forgot Password ?</a>
 													</div>
 												</div>
-												{* Retain this tracker to help us get usage details *}
-												<img src='//stats.vtiger.com/stats.php?uid={$APPUNIQUEKEY}&v={$CURRENT_VERSION}&type=U' alt='' title='' border=0 width='1px' height='1px'>
 											</form>
 											<div class="login-subscript">
 												<small>Turkuaz CRM {$CURRENT_VERSION}</small>

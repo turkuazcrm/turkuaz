@@ -29,70 +29,7 @@
 			<div class="offset2 row">
 				<div class="col-sm-2"></div>
 				<div class="col-sm-8">
-					<table class="config-table input-table">
-						<tbody>
-							<tr>
-								<td><strong>Your Name</strong> <span class="no">*</span></td>
-								<td><input name="myname" class="text" required="true" style="width: 250px;"></td>
-							</tr>
-							<tr>
-								<td><strong>Your Email</strong> 
-								<td><input name="myemail" class="email" required="true" style="width: 250px;"></td>
-							<tr>
-								<td><strong>Your Industry</strong> <span class="no">*</span></td>
-								<td>
-									<select name="industry" class="select2" required="true" style="width:250px;" placeholder="Choose one...">
-										<option>Accounting</option>
-										<option>Advertising</option>
-										<option>Agriculture</option>
-										<option>Apparel &amp; Accessories</option>
-										<option>Automotive</option>
-										<option>Banking &amp; Financial Services</option>
-										<option>Biotechnology</option>
-										<option>Call Centers</option>
-										<option>Careers/Employment</option>
-										<option>Chemical</option>
-										<option>Computer Hardware</option>
-										<option>Computer Software</option>
-										<option>Consulting</option>
-										<option>Construction</option>
-										<option>Education</option>
-										<option>Energy Services</option>
-										<option>Engineering</option>
-										<option>Entertainment</option>
-										<option>Financial</option>
-										<option>Food &amp; Food Service</option>
-										<option>Government</option>
-										<option>Health care</option>
-										<option>Insurance</option>
-										<option>Legal</option>
-										<option>Logistics</option>
-										<option>Manufacturing</option>
-										<option>Media &amp; Production</option>
-										<option>Non-profit</option>
-										<option>Pharmaceutical</option>
-										<option>Real Estate</option>
-										<option>Rental</option>
-										<option>Retail &amp; Wholesale</option>
-										<option>Security</option>
-										<option>Service</option>
-										<option>Sports</option>
-										<option>Telecommunications</option>
-										<option>Transportation</option>
-										<option>Travel &amp; Tourism</option>
-										<option>Utilities</option>
-										<option>Other</option>
-									</select>
-								</td>
-							</tr>
-							<tr>
-								<td colspan="2">
-								This information will not be shared. Vtiger will use the email address for sending a monthly newsletter and any product updates.
-								Industry will be used to understand use cases and further improve the product.
-								</td>
-							</tr>
-						</tbody>
-					</table>
+					Thank you for using Turkuaz CRM.
 				</div>
 			</div>
 			<div class="row offset2">
