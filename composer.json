@@ -1,11 +1,21 @@
 {
-    "name": "berkhanberkdemir/vtiger",
-    "type": "project",
-    "require-dev": {
-        "codeception/codeception": "^4.2",
-        "codeception/module-phpbrowser": "^1.0.0",
-        "codeception/module-asserts": "^1.0.0",
-        "codeception/module-webdriver": "^2.0"
-    },
-    "license": "MPL 1.1"
+  "name": "turkuazcrm/turkuaz",
+  "type": "project",
+  "require-dev": {
+    "codeception/codeception": "^4.2",
+    "codeception/module-phpbrowser": "^1.0.0",
+    "codeception/module-asserts": "^1.0.0",
+    "codeception/module-webdriver": "^2.0"
+  },
+  "license": "MPL 1.1",
+  "require": {
+    "ext-curl": "*",
+    "ext-gd": "*",
+    "ext-imap": "*",
+    "ext-mbstring": "*",
+    "ext-mysqli": "*",
+    "ext-xml": "*",
+    "ext-zip": "*",
+    "adodb/adodb-php": "5.21.4"
+  }
 }
