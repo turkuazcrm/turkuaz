@@ -10,6 +10,7 @@
 
 include_once 'vtlib/Vtiger/Module.php';
 include_once 'includes/Loader.php';
+
 vimport('includes.runtime.EntryPoint');
 
 Vtiger_ShowFile_Helper::handle(vtlib_purify($_REQUEST['fid']), vtlib_purify($_REQUEST['key']));
