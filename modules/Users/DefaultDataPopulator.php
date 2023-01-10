@@ -1257,7 +1257,7 @@ Thanks,
 
 		$body = 'Hello!   <br />
 	<br />
-	On behalf of the vtiger team,  I am pleased to announce the release of vtiger crm4.2 . This is a feature packed release including the mass email template handling, custom view feature, vtiger_reports feature and a host of other utilities. vtiger runs on all platforms.    <br />
+	On behalf of the vtiger team,  I am pleased to announce the release of Turkuaz CRM 4.2 . This is a feature packed release including the mass email template handling, custom view feature, vtiger_reports feature and a host of other utilities. vtiger runs on all platforms.    <br />
         <br />
 	Notable Features of vtiger are :   <br />
 	<br />

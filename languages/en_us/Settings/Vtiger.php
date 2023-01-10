@@ -39,7 +39,7 @@ $languageStrings = array(
 	'LBL_DESCRIPTION' => 'Description',
     
 	// Other Strings
-	'LBL_USER_DESCRIPTION' => 'Manage users who can access Vtiger CRM',
+	'LBL_USER_DESCRIPTION' => 'Manage users who can access Turkuaz CRM',
 	'LBL_ROLES' => 'Roles',
 	'LBL_ROLE_DESCRIPTION' => 'Set up hierarchy of roles and assign to the users',
 

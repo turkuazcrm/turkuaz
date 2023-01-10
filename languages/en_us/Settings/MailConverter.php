@@ -37,7 +37,7 @@ $languageStrings = array(
 	'LBL_NEXT' => 'Next',
 	'LBL_FINISH' => 'Finish',
 	'TO_CHANGE_THE_FOLDER_SELECTION_DESELECT_ANY_OF_THE_SELECTED_FOLDERS' => 'To change the folder selection deselect any of the selected folders',
-	'LBL_MAILCONVERTER_DESCRIPTION' => "Mail Converter enables you to configure your mailbox to scan your emails and create appropriate entities in Vtiger CRM.<br />You'll also need to define rules to specify what actions should be performed on your emails.<br />Your emails are scanned automatically, unless you've disabled Mail Scanner task in Scheduler. <br /><br /><br />",
+	'LBL_MAILCONVERTER_DESCRIPTION' => "Mail Converter enables you to configure your mailbox to scan your emails and create appropriate entities in Turkuaz CRM.<br />You'll also need to define rules to specify what actions should be performed on your emails.<br />Your emails are scanned automatically, unless you've disabled Mail Scanner task in Scheduler. <br /><br /><br />",
 	
 	//Server Messages
 	'LBL_MAX_LIMIT_ONLY_TWO' => 'You can configure only two mailboxes',
@@ -173,7 +173,7 @@ $languageStrings = array(
     'LBL_EQUAL_GREATER_THAN' => '=> (Equals-Greater Than)',
     'LBL_OTHER' => 'Other',
     'LBL_DELIMITER_INFO' => 'Select the delimiter that separates values from labels in your email body',
-    'LBL_EMAIL_BODY_INFO' => 'Copy text from a sample email to be scanned into the below box. Vtiger CRM will try to locate values and help you map to CRM fields.',
+    'LBL_EMAIL_BODY_INFO' => 'Copy text from a sample email to be scanned into the below box. Turkuaz CRM will try to locate values and help you map to CRM fields.',
     'LBL_SAMPLE_BODY_TEXT' => 'Sample Body Text',
     'LBL_FIND_FIELDS' => 'Click here to find values from email body',
     'LBL_BODY_FIELDS' => 'Values from Email',

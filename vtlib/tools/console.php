@@ -53,7 +53,7 @@ class Vtiger_Tools_Console_Controller {
 
 	protected function welcome() {
 		if ($this->interactive) {
-			echo "Welcome to Vtiger CRM Creator.\n";
+			echo "Welcome to Turkuaz CRM Creator.\n";
 			echo "This tool will enable you to get started with developing extensions with ease.\n";
 			echo "Have a good time. Press CTRL+C to \"quit\".\n";
 		}

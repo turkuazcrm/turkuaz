@@ -200,7 +200,7 @@ $languageStrings = array(
 	'LBL_RESTORE' => 'Restore',
 	'LBL_USER_RESTORED_SUCCESSFULLY' => 'User restored successfully',
 	//Login strings
-	'LBL_TO_CRM' => 'Login to Vtiger CRM',
+	'LBL_TO_CRM' => 'Login to Turkuaz CRM',
 	'LBL_INVALID_USER_OR_PASSWORD' => 'Invalid username or password.',
 	'LBL_INVALID_USER_OR_EMAIL' => 'Invalid Username or Email address.',
 	'LBL_EMAIL_SEND' => 'We have sent you email to reset your password.',

@@ -275,7 +275,7 @@
 					<div class="span12 inner-container">
 						<div class="row-fluid">
 							<div class="span8">
-								<h3 style="display: inline-block;float:left;"> What would you like to use Vtiger CRM for? </h3> 
+								<h3 style="display: inline-block;float:left;"> What would you like to use Turkuaz CRM for? </h3>
 								<p style="display: inline-block;float:left;margin-top:4px;">&nbsp;&nbsp;(Select features you want to enable)</p>
 							</div>
 							<div class="span4">
