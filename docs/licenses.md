@@ -11,7 +11,7 @@ because of either security, performance, usability or license problems.
 ## About This Project
 
 Turkuaz CRM uses [GNU AGPL, Version 3.0].  All source codes that are not
-originated from the original authors will automatically licensed in
+originated from the original authors will automatically be licensed in
 AGPL.
 
 ## Third Party Libraries
