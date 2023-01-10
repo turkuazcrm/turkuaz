@@ -1,87 +1,117 @@
 #!/usr/bin/env bash
 
+# NOTE: Note to future developer.  I wanted to finish this because
+#   archiving by hand is nonsense!
+
 # Mandatory modules
 #
 cd pkg/vtiger/modules/Import
-zip -f -9 -r ../../../../packages/vtiger/mandatory/Import.zip *
+rm ../../../../packages/vtiger/mandatory/Import.zip
+zip -9 -r ../../../../packages/vtiger/mandatory/Import.zip *
 cd ../../../../
 
 cd pkg/vtiger/modules/MailManager
-zip -f -9 -r ../../../../packages/vtiger/mandatory/MailManager.zip *
+rm ../../../../packages/vtiger/mandatory/MailManager.zip
+zip -9 -r ../../../../packages/vtiger/mandatory/MailManager.zip *
 cd ../../../../
 
 cd pkg/vtiger/modules/Mobile
-zip -f -9 -r ../../../../packages/vtiger/mandatory/Mobile.zip *
+rm ../../../../packages/vtiger/mandatory/Mobile.zip
+zip -9 -r ../../../../packages/vtiger/mandatory/Mobile.zip *
 cd ../../../../
 
 cd pkg/vtiger/modules/ModTracker
-zip -f -9 -r ../../../../packages/vtiger/mandatory/ModTracker.zip *
+rm ../../../../packages/vtiger/mandatory/ModTracker.zip
+zip -9 -r ../../../../packages/vtiger/mandatory/ModTracker.zip *
 cd ../../../../
 
 cd pkg/vtiger/modules/PBXManager
-zip -f -9 -r ../../../../packages/vtiger/mandatory/PBXManager.zip *
+rm ../../../../packages/vtiger/mandatory/PBXManager.zip
+zip -9 -r ../../../../packages/vtiger/mandatory/PBXManager.zip *
 cd ../../../../
 
 cd pkg/vtiger/modules/ServiceContracts
-zip -f -9 -r ../../../../packages/vtiger/mandatory/ServiceContracts.zip *
+rm ../../../../packages/vtiger/mandatory/ServiceContracts.zip
+zip -9 -r ../../../../packages/vtiger/mandatory/ServiceContracts.zip *
 cd ../../../../
 
 cd pkg/vtiger/modules/Services
-zip -f -9 -r ../../../../packages/vtiger/mandatory/Services.zip *
+rm ../../../../packages/vtiger/mandatory/Services.zip
+zip -9 -r ../../../../packages/vtiger/mandatory/Services.zip *
 cd ../../../../
 
 cd pkg/vtiger/modules/WSAPP
-zip -f -9 -r ../../../../packages/vtiger/mandatory/WSAPP.zip *
+rm ../../../../packages/vtiger/mandatory/WSAPP.zip
+zip -9 -r ../../../../packages/vtiger/mandatory/WSAPP.zip *
 cd ../../../../
 
 # Marketplace modules
 #
 cd pkg/vtiger/modules/ExtensionStore
-zip -f -9 -r ../../../../packages/vtiger/marketplace/ExtensionStore.zip *
+rm ../../../../packages/vtiger/mandatory/ExtensionStore.zip
+zip -9 -r ../../../../packages/vtiger/marketplace/ExtensionStore.zip *
 cd ../../../../
 
 # Optional Modules
 #
 cd pkg/vtiger/modules/Assets
-zip -f -9 -r ../../../../packages/vtiger/optional/Assets.zip *
+rm ../../../../packages/vtiger/mandatory/Assets.zip
+zip -9 -r ../../../../packages/vtiger/optional/Assets.zip *
 cd ../../../../
 
 cd pkg/vtiger/modules/CustomerPortal
-zip -f -9 -r ../../../../packages/vtiger/optional/CustomerPortal.zip *
+rm ../../../../packages/vtiger/mandatory/CustomerPortal.zip
+zip -9 -r ../../../../packages/vtiger/optional/CustomerPortal.zip *
 cd ../../../../
 
 cd pkg/vtiger/modules/EmailTemplates
-zip -f -9 -r ../../../../packages/vtiger/optional/EmailTemplates.zip *
+rm ../../../../packages/vtiger/mandatory/EmailTemplates.zip
+zip -9 -r ../../../../packages/vtiger/optional/EmailTemplates.zip *
 cd ../../../../
 
 cd pkg/vtiger/modules/Google
-zip -f -9 -r ../../../../packages/vtiger/optional/Google.zip *
+rm ../../../../packages/vtiger/mandatory/Google.zip
+zip -9 -r ../../../../packages/vtiger/optional/Google.zip *
 cd ../../../../
 
 cd pkg/vtiger/modules/ModComments
-zip -f -9 -r ../../../../packages/vtiger/optional/ModComments.zip *
+rm ../../../../packages/vtiger/mandatory/ModComments.zip
+zip -9 -r ../../../../packages/vtiger/optional/ModComments.zip *
 cd ../../../../
 
 # TODO: Each directory inside it needs to be archived as well
 #
-#cd pkg/vtiger/modules/Projects
-#zip -f -9 -r ../../../../packages/vtiger/optional/Projects.zip *
-#cd ../../../../
+cd pkg/vtiger/modules/Projects
+rm ../../../../packages/vtiger/mandatory/Projects.zip
+cd Project
+zip -9 -r ../Project.zip *
+cd ../ProjectMilestone
+zip -9 -r ../ProjectMilestone.zip *
+cd ../ProjectTask
+zip -9 -r ../ProjectTask.zip *
+cd ../
+zip -9 -r ../../../../packages/vtiger/optional/Projects.zip *
+rm Project.zip ProjectMilestone.zip ProjectTask.zip
+cd ../../../../
 
 cd pkg/vtiger/modules/RecycleBin
-zip -f -9 -r ../../../../packages/vtiger/optional/RecycleBin.zip *
+rm ../../../../packages/vtiger/mandatory/RecycleBin.zip
+zip -9 -r ../../../../packages/vtiger/optional/RecycleBin.zip *
 cd ../../../../
 
 cd pkg/vtiger/modules/SMSNotifier
-zip -f -9 -r ../../../../packages/vtiger/optional/SMSNotifier.zip *
+rm ../../../../packages/vtiger/mandatory/SMSNotifier.zip
+zip -9 -r ../../../../packages/vtiger/optional/SMSNotifier.zip *
 cd ../../../../
 
 cd pkg/vtiger/modules/Webforms
-zip -f -9 -r ../../../../packages/vtiger/optional/Webforms.zip *
+rm ../../../../packages/vtiger/mandatory/Webforms.zip
+zip -9 -r ../../../../packages/vtiger/optional/Webforms.zip *
 cd ../../../../
 
 # Optional translation modules
 #
 cd pkg/vtiger/translations/TurkishLanguagePack_tr_tr
-zip -f -9 -r ../../../../packages/vtiger/optional/TurkishLanguagePack_tr_tr.zip *
+rm ../../../../packages/vtiger/mandatory/TurkishLanguagePack_tr_tr.zip
+zip -9 -r ../../../../packages/vtiger/optional/TurkishLanguagePack_tr_tr.zip *
 cd ../../../../
