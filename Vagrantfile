@@ -40,7 +40,7 @@ Vagrant.configure('2') do |config|
   config.vm.provision :shell, inline: <<-SHELL
     apt-get update
     apt-get install --yes --no-install-recommends git apache2 php \
-       php-mbstring php-curl php-imap php-xml php-mysql php-zip \
+       php-mbstring php-curl php-imap php-xml php-mysql php-zip php-gd \
        unzip mariadb-server docker.io \
        yarnpkg composer
     su vagrant -c 'yarnpkg global add prettier @prettier/plugin-php'
