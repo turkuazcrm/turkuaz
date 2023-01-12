@@ -1,0 +1,48 @@
+---
+name: Release
+
+on:
+  push:
+    branches:
+      - 'devel'
+      - 'releases/**'
+
+jobs:
+  archive:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup PHP with extension
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+          extensions: imagick, curl, imap, xml, mysql, zip, gd
+          tools: composer:v2
+
+      - name: Get composer cache directory
+        id: composer-cache
+        run: echo "dir=$(composer config cache-files-dir)" >> $GITHUB_OUTPUT
+
+      - name: Cache composer dependencies
+        uses: actions/cache@v3
+        with:
+          path: ${{ steps.composer-cache.outputs.dir }}
+          key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
+          restore-keys: ${{ runner.os }}-composer-
+
+      - name: Install Composer dependencies
+        run: composer install --no-ansi --no-dev --no-interaction --no-plugins --no-progress --no-scripts
+
+      - name: Remove unused files/directories
+        run: |
+          rm -rf bin pkg .gitattributes .gitignore .prettiergnore .prettierrc codeception.yml Vagrantfile
+
+      - name: Archive project
+        run: zip -r "turkuazcrm.zip" ./*
+
+      - name: Upload artifact for deployment job
+        uses: actions/upload-artifact@v3
+        with:
+          name: release
+          path: turkuazcrm.zip
