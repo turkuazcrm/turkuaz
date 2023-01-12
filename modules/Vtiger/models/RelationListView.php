@@ -223,7 +223,7 @@ class Vtiger_RelationListView_Model extends Vtiger_Base_Model {
 				'linktype' => 'LISTVIEWBASIC',
 				'linklabel' => 'Vtiger',
 				'linkurl' => $this->getCreateViewUrl(),
-				'linkicon' => 'Vtiger.png',
+				'linkicon' => 'turkuazcrm.png',
 				'linkdropdowns' => $vtigerDocumentTypes,
 				'linkclass' => 'addDocumentToVtiger',
 			);

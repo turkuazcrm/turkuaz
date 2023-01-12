@@ -86,7 +86,7 @@ if (!$errorMessage) {
 <!doctype html>
 <html>
 	<head>
-		<title>Vtiger CRM Setup</title>
+		<title>Turkuaz CRM Setup</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script type="text/javascript" src="resources/js/jquery-min.js"></script>
                 <script type="text/javascript" src="resources/js/jquery-migrate-1.4.1.js"></script>

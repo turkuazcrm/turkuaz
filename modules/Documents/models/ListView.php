@@ -46,7 +46,7 @@ class Documents_ListView_Model extends Vtiger_ListView_Model {
 							'linktype' => 'LISTVIEWBASIC',
 							'linklabel' => 'Vtiger',
 							'linkurl' => $moduleModel->getCreateRecordUrl(),
-							'linkicon' => 'Vtiger.png',
+							'linkicon' => 'turkuazcrm.png',
                             'linkdropdowns' => $vtigerDocumentTypes,
                             'linkclass' => 'addDocumentToVtiger',
 					),
